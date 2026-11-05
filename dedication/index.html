@@ -4,38 +4,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Kyle Quenzo &middot; Child Dedication</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2746%27 fill=%27%23c9a052%27/%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27none%27 stroke=%27%238d6a2c%27 stroke-width=%273%27/%3E%3C/svg%3E">
+<title>Kyle Quenzo &middot; Christening</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2746%27 fill=%27%23d4b46a%27/%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27none%27 stroke=%27%23a8873f%27 stroke-width=%273%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&family=Pinyon+Script&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap">
 <style>
-/* Layout: one screen. Sealed envelope on linen → tap the seal → card rises out and becomes a page-turning booklet. */
+/* Layout: one screen. Sealed envelope on a soft sky → tap the seal → card rises out and becomes a page-turning booklet. */
 :root{
   color-scheme: light;
-  --linen:#f4eee8;
-  --linen-deep:#e7ddd4;
-  --rose:#b77a6d;
-  --rose-side:#a86c60;
-  --rose-flap:#c18679;
-  --rose-deep:#7e4a40;
-  --blush:#f0dfd8;
-  --gold:#c9a052;
-  --gold-hi:#f1dca3;
-  --gold-lo:#8d6a2c;
-  --ink:#4b3934;
-  --ink-soft:#7d6863;
-  --panel:#fbf8f5;
-  --f-script:"Pinyon Script", "Snell Roundhand", cursive;
-  --f-serif:"Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
-  --f-ui:"Jost", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --sky:#eef5fb;
+  --sky-deep:#d9e8f4;
+  --cloud:#ffffff;
+  --powder:#b7d3ea;
+  --powder-side:#a6c6e1;
+  --powder-flap:#c4dbee;
+  --slate:#2f4a63;
+  --slate-soft:#5f7a92;
+  --gold:#d4b46a;
+  --gold-hi:#f3e2b3;
+  --gold-lo:#a8873f;
+  --panel:#fbfdff;
+  --f-display:"Fredoka", "Varela Round", "Nunito", system-ui, sans-serif;
+  --f-body:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
 }
 html,body{height:100%}
 body{
-  background-color:var(--linen);
-  background-image:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(126,74,64,.10) 100%);
-  color:var(--ink);
-  font-family:var(--f-ui);
+  background-color:var(--sky);
+  background-image:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(47,74,99,.10) 100%);
+  color:var(--slate);
+  font-family:var(--f-body);
   overflow:hidden;
   -webkit-tap-highlight-color:transparent;
 }
@@ -47,13 +45,12 @@ body{
   box-sizing:border-box;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,4vh,34px);
 }
-.texture{position:fixed;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;background-size:220px 220px}
+.texture{position:fixed;inset:0;pointer-events:none;opacity:.3;mix-blend-mode:multiply;background-size:220px 220px}
 
 /* ---------- Sealed state ---------- */
-.heading{text-align:center;display:grid;gap:6px}
-.names{font-family:var(--f-script);font-size:clamp(40px,10vw,60px);line-height:1;color:var(--rose-deep);margin:0;font-weight:400;text-wrap:balance}
-.names .amp{font-size:.7em;color:var(--gold-lo);padding:0 .12em}
-.when{font-family:var(--f-ui);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft)}
+.heading{text-align:center;display:grid;gap:8px}
+.names{font-family:var(--f-display);font-weight:600;font-size:clamp(36px,9vw,54px);line-height:1;color:var(--slate);margin:0;letter-spacing:.01em;text-wrap:balance}
+.when{font-family:var(--f-body);font-size:15px;color:var(--slate-soft)}
 
 .env{
   --ew:min(88vw, 460px, calc((100vh - 260px) * 1.43));
@@ -61,32 +58,32 @@ body{
   border:0;padding:0;background:none;
 }
 .env > *{position:absolute}
-.env-back{inset:0;border-radius:6px;background:linear-gradient(#80493f,#94584c);box-shadow:0 30px 50px -22px rgba(80,40,34,.55),0 6px 14px rgba(80,40,34,.18);z-index:1}
+.env-back{inset:0;border-radius:6px;background:linear-gradient(#8fb2d0,#9dbdd8);box-shadow:0 30px 50px -22px rgba(47,74,99,.5),0 6px 14px rgba(47,74,99,.16);z-index:1}
 .card{
   z-index:3;left:27%;width:46%;top:3%;aspect-ratio:397/560;
-  background:#fff center/cover no-repeat;border-radius:3px;
-  box-shadow:0 2px 6px rgba(60,30,25,.25);
+  background:#fff;border-radius:3px;overflow:hidden;
+  box-shadow:0 2px 6px rgba(47,74,99,.25);
 }
 .front{inset:0;z-index:4;border-radius:6px;overflow:hidden;
   clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);
-  background:linear-gradient(170deg,#bd8174,var(--rose) 60%,#ad7064);
+  background:linear-gradient(170deg,#c0d9ec,var(--powder) 60%,#aacae3);
 }
 .front::before,.front::after{content:"";position:absolute;inset:0}
-.front::before{clip-path:polygon(0 0,50% 57%,0 100%);background:linear-gradient(100deg,var(--rose-side),#b47769)}
-.front::after{clip-path:polygon(100% 0,50% 57%,100% 100%);background:linear-gradient(260deg,#a2675b,#b0746a)}
+.front::before{clip-path:polygon(0 0,50% 57%,0 100%);background:linear-gradient(100deg,var(--powder-side),#b3d0e7)}
+.front::after{clip-path:polygon(100% 0,50% 57%,100% 100%);background:linear-gradient(260deg,#a2c3de,#afcde6)}
 .flap{left:0;top:0;width:100%;height:60%;z-index:5;transform-origin:50% 0;transform:perspective(1000px) rotateX(0deg);transform-style:preserve-3d}
 .flap .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;clip-path:polygon(0 0,100% 0,50% 100%)}
-.flap .out{background:linear-gradient(180deg,#c88d80,var(--rose-flap) 55%,#b97d70);border-radius:6px 6px 0 0}
+.flap .out{background:linear-gradient(180deg,#cfe2f1,var(--powder-flap) 55%,#b9d3ea);border-radius:6px 6px 0 0}
 .flap .in{transform:rotateX(180deg);background:
-  radial-gradient(circle at 25% 30%, rgba(183,122,109,.28) 0 2px, transparent 2.5px) 0 0/16px 16px,
-  radial-gradient(circle at 75% 80%, rgba(201,160,82,.30) 0 1.6px, transparent 2px) 0 0/16px 16px,
-  linear-gradient(var(--blush),#f7ebe6)}
+  radial-gradient(circle at 25% 30%, rgba(212,180,106,.35) 0 1.6px, transparent 2.2px) 0 0/18px 18px,
+  radial-gradient(circle at 75% 80%, rgba(183,211,234,.5) 0 2px, transparent 2.6px) 0 0/18px 18px,
+  linear-gradient(#ffffff,#f1f7fc)}
 .seal{left:50%;top:60%;width:clamp(64px,19%,88px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:6;pointer-events:none}
-.seal svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 3px 3px rgba(70,40,10,.35))}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 3px 3px rgba(70,50,10,.3))}
 .seal .half-l{clip-path:inset(0 50% 0 0)}
 .seal .half-r{clip-path:inset(0 0 0 50%)}
 .env:focus-visible{outline:2px solid var(--gold-lo);outline-offset:8px;border-radius:8px}
-.hint{font-family:var(--f-serif);font-style:italic;font-size:19px;color:var(--ink-soft);display:flex;align-items:center;gap:10px}
+.hint{font-family:var(--f-body);font-style:italic;font-size:17px;color:var(--slate-soft);display:flex;align-items:center;gap:10px}
 .hint::before,.hint::after{content:"";width:28px;height:1px;background:var(--gold)}
 .pulse{animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.06)}}
@@ -96,53 +93,83 @@ body{
   padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:16px;box-sizing:border-box;visibility:hidden}
 .reader.on{visibility:visible}
 .book{position:relative;width:var(--bw,300px);height:var(--bh,423px);touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none}
-.page{position:absolute;inset:0;background:#fff center/cover no-repeat;border-radius:4px;
-  box-shadow:0 24px 44px -20px rgba(80,40,34,.5),0 4px 10px rgba(80,40,34,.14);transform-origin:0 50%;backface-visibility:hidden}
-.page img{width:100%;height:100%;object-fit:cover;border-radius:4px;display:block;pointer-events:none}
+.page{position:absolute;inset:0;background:#fff;border-radius:4px;overflow:hidden;
+  box-shadow:0 24px 44px -20px rgba(47,74,99,.5),0 4px 10px rgba(47,74,99,.14);transform-origin:0 50%;backface-visibility:hidden}
+
+/* ---------- The invitation pages (sized in container units so the same markup fits the envelope preview and the booklet) ---------- */
+.card,.page{container-type:inline-size}
+.pg{position:absolute;inset:0;overflow:hidden;color:var(--slate);text-align:center;
+  background:linear-gradient(180deg,#d8e9f6 0%,#eaf3fa 45%,#f8fbfe 100%)}
+.pg .sky{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.pg > *{position:relative}
+.pg p,.pg h2{margin:0}
+.pg img{pointer-events:none}
+
+.pg1{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:10cqw 8cqw 0;box-sizing:border-box}
+.pg1 .cross{width:13cqw;height:13cqw;margin-bottom:5cqw}
+.pg1 .photo{width:52cqw;height:52cqw;border-radius:50%;padding:2.2cqw;background:#fff;
+  box-shadow:0 0 0 3cqw rgba(183,211,234,.55),0 12cqw 14cqw -9cqw rgba(47,74,99,.4);position:relative}
+.pg1 .photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.pg1 .photo::after{content:"";position:absolute;inset:2.2cqw;border-radius:50%;box-shadow:inset 0 0 6cqw rgba(47,74,99,.18)}
+.pg1 .lead{margin-top:7cqw;font:italic 400 4.6cqw/1.3 var(--f-body);color:var(--slate-soft)}
+.pg1 .kid{font:600 13.5cqw/1 var(--f-display);letter-spacing:.005em;margin-top:1.5cqw;text-wrap:balance}
+.pg1 .date{margin-top:5cqw;font:600 4.2cqw/1.5 var(--f-body)}
+.pg1 .date small{display:block;font-weight:400;color:var(--slate-soft)}
+
+.pg2{display:flex;flex-direction:column;justify-content:center;padding:8cqw 9cqw;box-sizing:border-box;gap:3.6cqw}
+.pg2 .msg{font:400 4.3cqw/1.5 var(--f-body);text-wrap:pretty}
+.pg2 .msg.first{font:500 5.4cqw/1.3 var(--f-display)}
+.pg2 .facts{margin:2cqw 0 0;padding:0;display:grid;gap:2.4cqw;text-align:left}
+.pg2 .facts div{display:grid;grid-template-columns:19cqw 1fr;gap:2.2cqw;align-items:baseline}
+.pg2 dt{font:500 4.2cqw/1.4 var(--f-display);color:var(--gold-lo)}
+.pg2 dd{margin:0;font:400 3.9cqw/1.45 var(--f-body)}
+.pg2 .outro{margin-top:1.2cqw;font:500 4.4cqw/1.4 var(--f-display);color:var(--slate-soft);text-wrap:balance}
+.pg2 .rule{width:22cqw;height:3cqw;margin:0 auto}
+
 .controls{display:flex;align-items:center;gap:10px;opacity:0}
-.btn{font:500 13px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);
-  background:var(--panel);border:1px solid rgba(126,74,64,.22);border-radius:999px;height:44px;min-width:44px;padding:0 16px;
+.btn{font:600 13px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);
+  background:var(--panel);border:1px solid rgba(47,74,99,.2);border-radius:999px;height:44px;min-width:44px;padding:0 16px;
   display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
-.btn:hover{border-color:var(--rose)}
+.btn:hover{border-color:var(--powder-side)}
 .btn:focus-visible{outline:2px solid var(--gold-lo);outline-offset:2px}
 .btn[disabled]{opacity:.35;cursor:default}
 .btn.icon{padding:0;width:44px}
 .btn svg{width:18px;height:18px}
-.count{font:500 13px/1 var(--f-ui);letter-spacing:.12em;color:var(--ink-soft);min-width:54px;text-align:center;font-variant-numeric:tabular-nums}
+.count{font:600 13px/1 var(--f-body);letter-spacing:.08em;color:var(--slate-soft);min-width:54px;text-align:center;font-variant-numeric:tabular-nums}
 .music{position:fixed;z-index:20;top:calc(14px + env(safe-area-inset-top,0px));right:max(14px, calc(env(safe-area-inset-right,0px) + 8px));opacity:0;pointer-events:none;transition:opacity .6s}
 .music.show{opacity:1;pointer-events:auto}
 .music .bars{display:flex;gap:2px;align-items:flex-end;height:14px}
-.music .bars i{width:3px;background:var(--rose);border-radius:1px;height:4px;animation:eq 1s ease-in-out infinite}
+.music .bars i{width:3px;background:var(--slate);border-radius:1px;height:4px;animation:eq 1s ease-in-out infinite}
 .music .bars i:nth-child(2){animation-delay:-.3s}.music .bars i:nth-child(3){animation-delay:-.6s}
-.music.muted .bars i{animation:none;height:3px;background:var(--ink-soft)}
+.music.muted .bars i{animation:none;height:3px;background:var(--slate-soft)}
 @keyframes eq{0%,100%{height:4px}50%{height:14px}}
 
 /* ---------- Details sheet ---------- */
-.scrim{position:fixed;inset:0;z-index:30;background:rgba(60,35,30,.35);opacity:0;transition:opacity .3s}
+.scrim{position:fixed;inset:0;z-index:30;background:rgba(47,74,99,.35);opacity:0;transition:opacity .3s}
 .scrim.open{opacity:1}
 .sheet{position:fixed;z-index:31;left:0;right:0;bottom:0;margin:0 auto;max-width:520px;max-height:86%;overflow:auto;
-  background:var(--panel);border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(60,35,30,.25);
+  background:var(--panel);border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(47,74,99,.25);
   padding:10px max(20px, env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px, env(safe-area-inset-left,0px));
   transform:translateY(105%);transition:transform .38s cubic-bezier(.2,.8,.2,1);box-sizing:border-box}
 .sheet.open{transform:none}
-.grab{width:40px;height:4px;border-radius:2px;background:var(--linen-deep);margin:4px auto 10px}
-.sheet h2{font:500 30px/1.1 var(--f-serif);margin:4px 0 2px;color:var(--rose-deep);text-align:center}
-.sheet .sub{font:12px var(--f-ui);letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);text-align:center;margin:0 0 18px}
+.grab{width:40px;height:4px;border-radius:2px;background:var(--sky-deep);margin:4px auto 10px}
+.sheet h2{font:600 30px/1.1 var(--f-display);margin:4px 0 2px;color:var(--slate);text-align:center}
+.sheet .sub{font:15px var(--f-body);color:var(--slate-soft);text-align:center;margin:0 0 18px}
 .events{display:grid;gap:0;margin:0;padding:0;list-style:none}
-.ev{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--linen-deep)}
-.ev .t{font:500 15px/1.2 var(--f-serif);color:var(--gold-lo);font-variant-numeric:tabular-nums;padding-top:2px}
-.ev .t small{display:block;font:11px/1.4 var(--f-ui);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
-.ev h3{margin:0;font:600 19px/1.2 var(--f-serif);color:var(--ink)}
-.ev p{margin:3px 0 8px;font:14px/1.45 var(--f-ui);color:var(--ink-soft);min-width:0}
-.link{font:500 12px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
-.rsvp{margin-top:6px;padding:16px;border-radius:12px;background:var(--blush)}
-.rsvp h3{margin:0 0 2px;font:600 19px/1.2 var(--f-serif)}
-.rsvp > p{margin:0 0 10px;font:14px/1.45 var(--f-ui);color:var(--ink-soft)}
-.contact{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(126,74,64,.15)}
-.contact span{font:15px/1.3 var(--f-ui);min-width:0}
-.contact b{font-weight:500;display:block;font-family:var(--f-serif);font-size:18px}
+.ev{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--sky-deep)}
+.ev .t{font:600 15px/1.2 var(--f-body);color:var(--gold-lo);font-variant-numeric:tabular-nums;padding-top:2px}
+.ev .t small{display:block;font:12px/1.4 var(--f-body);color:var(--slate-soft)}
+.ev h3{margin:0;font:500 19px/1.2 var(--f-display);color:var(--slate)}
+.ev p{margin:3px 0 8px;font:14px/1.45 var(--f-body);color:var(--slate-soft);min-width:0}
+.link{font:600 12px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.rsvp{margin-top:6px;padding:16px;border-radius:12px;background:#e9f2fa}
+.rsvp h3{margin:0 0 2px;font:500 19px/1.2 var(--f-display)}
+.rsvp > p{margin:0 0 10px;font:14px/1.45 var(--f-body);color:var(--slate-soft)}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(47,74,99,.12)}
+.contact span{font:15px/1.3 var(--f-body);min-width:0}
+.contact b{font-weight:500;display:block;font-family:var(--f-display);font-size:18px}
 .contact .num{user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums;letter-spacing:.04em}
-.copy{font:500 12px/1 var(--f-ui);letter-spacing:.12em;text-transform:uppercase;color:var(--rose-deep);background:var(--panel);border:1px solid rgba(126,74,64,.25);border-radius:999px;height:36px;padding:0 14px;cursor:pointer;flex:none}
+.copy{font:600 12px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);background:var(--panel);border:1px solid rgba(47,74,99,.22);border-radius:999px;height:36px;padding:0 14px;cursor:pointer;flex:none}
 .cal{display:flex;justify-content:center;margin-top:18px}
 .close{position:absolute;top:10px;right:max(12px, env(safe-area-inset-right,0px))}
 
@@ -156,7 +183,7 @@ body{
 <main class="stage" id="stage">
   <header class="heading" id="heading">
     <h1 class="names">Kyle Quenzo</h1>
-    <div class="when">Child Dedication &middot; Monday &middot; 14 December 2026</div>
+    <div class="when">A christening on Monday, December 14, 2026</div>
   </header>
 
   <button class="env" id="env" aria-label="Open the invitation">
@@ -176,12 +203,64 @@ body{
     <div class="book" id="book" aria-live="polite"></div>
     <nav class="controls" id="controls">
       <button class="btn icon" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <span class="count" id="count">1 / 1</span>
+      <span class="count" id="count">1 / 2</span>
       <button class="btn icon" id="next" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
       <button class="btn" id="detailsBtn">Details</button>
     </nav>
   </section>
 </main>
+
+<!-- Page 1: the christening card -->
+<template id="pg1">
+  <div class="pg pg1">
+    <svg class="sky" viewBox="0 0 397 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g filter="url(#soft)" fill="#fff">
+        <ellipse cx="60" cy="90" rx="110" ry="42" opacity=".85"/>
+        <ellipse cx="350" cy="150" rx="120" ry="40" opacity=".8"/>
+        <ellipse cx="30" cy="330" rx="95" ry="36" opacity=".7"/>
+        <ellipse cx="380" cy="400" rx="105" ry="38" opacity=".75"/>
+        <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95"/>
+      </g>
+      <g fill="#d4b46a" opacity=".8">
+        <path d="M62 190l2.4 6.6 6.6 2.4-6.6 2.4-2.4 6.6-2.4-6.6-6.6-2.4 6.6-2.4z"/>
+        <path d="M335 60l2 5.4 5.4 2-5.4 2-2 5.4-2-5.4-5.4-2 5.4-2z"/>
+        <path d="M330 300l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"/>
+        <path d="M70 450l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"/>
+      </g>
+    </svg>
+    <svg class="cross" viewBox="0 0 60 60" aria-hidden="true">
+      <path d="M30 6a6 6 0 0 1 6 6v8h8a6 6 0 0 1 0 12h-8v16a6 6 0 0 1-12 0V32h-8a6 6 0 0 1 0-12h8v-8a6 6 0 0 1 6-6z" fill="url(#gcross)"/>
+    </svg>
+    <div class="photo"><img src="photo.jpg" alt="Kyle Quenzo smiling in a white shirt and cream vest" width="900" height="900"></div>
+    <p class="lead">The christening of</p>
+    <h2 class="kid">Kyle Quenzo</h2>
+    <p class="date">Monday, December 14, 2026<small>3:30 in the afternoon</small></p>
+  </div>
+</template>
+
+<!-- Page 2: the family's message and the details -->
+<template id="pg2">
+  <div class="pg pg2">
+    <svg class="sky" viewBox="0 0 397 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g filter="url(#soft)" fill="#fff">
+        <ellipse cx="40" cy="30" rx="120" ry="40" opacity=".8"/>
+        <ellipse cx="370" cy="70" rx="110" ry="36" opacity=".7"/>
+        <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95"/>
+        <ellipse cx="20" cy="520" rx="110" ry="40" opacity=".7"/>
+      </g>
+    </svg>
+    <p class="msg first">Join us in celebrating a precious gift from above!</p>
+    <p class="msg">We joyfully present our child, Kyle Quenzo, to the Lord.</p>
+    <p class="msg">We cordially invite you to share in this special day of faith.</p>
+    <svg class="rule" viewBox="0 0 88 12" aria-hidden="true"><path d="M2 6h30M56 6h30" stroke="#d4b46a" stroke-width="1.2" stroke-linecap="round"/><path d="M44 1l1.6 3.4 3.4 1.6-3.4 1.6L44 11l-1.6-3.4L39 6l3.4-1.6z" fill="#d4b46a"/></svg>
+    <dl class="facts">
+      <div><dt>When</dt><dd>Monday, December 14, 2026 at 3:30 PM</dd></div>
+      <div><dt>Where</dt><dd>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</dd></div>
+      <div><dt>Reception</dt><dd>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</dd></div>
+    </dl>
+    <p class="outro">We look forward to celebrating this meaningful milestone with you!</p>
+  </div>
+</template>
 
 <button class="btn icon music" id="music" aria-label="Pause music"><span class="bars"><i></i><i></i><i></i></span></button>
 
@@ -190,11 +269,11 @@ body{
   <div class="grab"></div>
   <button class="btn icon close" id="closeSheet" aria-label="Close details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <h2 id="sheetTitle">Kyle Quenzo</h2>
-  <p class="sub">Child Dedication &middot; Monday &middot; 14 December 2026</p>
+  <p class="sub">Christening on Monday, December 14, 2026</p>
   <ul class="events">
     <li class="ev">
-      <div class="t">3:30 pm<small>Dedication</small></div>
-      <div><h3>Child Dedication of Kyle Quenzo</h3>
+      <div class="t">3:30 pm<small>Christening</small></div>
+      <div><h3>Christening of Kyle Quenzo</h3>
         <p>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</p>
         <a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=San+Juan+de+Sahagun+Parish+Church+Candon+City+Ilocos+Sur">Open in Maps</a></div>
     </li>
@@ -216,6 +295,8 @@ body{
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
+    <filter id="soft" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="14"/></filter>
+    <linearGradient id="gcross" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3e2b3"/><stop offset=".5" stop-color="#d4b46a"/><stop offset="1" stop-color="#a8873f"/></linearGradient>
     <radialGradient id="g1" cx="38%" cy="32%" r="75%">
       <stop offset="0" stop-color="#f6e4b0"/><stop offset=".45" stop-color="#d4ae62"/><stop offset="1" stop-color="#8d6a2c"/>
     </radialGradient>
@@ -226,15 +307,15 @@ body{
       <path id="sealEdge" fill="url(#g1)" d=""/>
       <circle cx="50" cy="50" r="33" fill="url(#g2)"/>
       <circle cx="50" cy="50" r="30" fill="none" stroke="#9c7632" stroke-width="1" stroke-dasharray="1.2 2.4"/>
-      <text x="50" y="58" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="27" fill="#7a5a22" stroke="#f3dea5" stroke-width=".5">KQ</text>
+      <text x="50" y="59" text-anchor="middle" font-family="Fredoka, Nunito, sans-serif" font-weight="600" font-size="25" fill="#7a5a22" stroke="#f3dea5" stroke-width=".4">KQ</text>
     </g>
   </defs>
 </svg>
 
 <script>
 (() => {
-  /* Pages in reading order. The first one is the card that slides out of the envelope. */
-  const PAGES = ['pages/p01.jpg'];
+  /* Pages in reading order, each a <template>. The first one is the card that slides out of the envelope. */
+  const PAGES = ['pg1', 'pg2'];
   const RATIO = 560 / 397;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = id => document.getElementById(id);
@@ -262,13 +343,13 @@ body{
     $('sealEdge').setAttribute('d', p + 'Z');
   })();
 
-  /* Build pages */
-  PAGES.forEach(src => { const im = new Image(); im.src = src; });
-  card.style.backgroundImage = `url(${PAGES[0]})`;
-  const pages = PAGES.map((src, i) => {
+  /* Build pages: the envelope preview gets a copy of page 1, the booklet gets every page */
+  const clone = id => $(id).content.cloneNode(true);
+  card.appendChild(clone(PAGES[0]));
+  const pages = PAGES.map((id, i) => {
     const d = document.createElement('div'); d.className = 'page'; d.hidden = i !== 0;
-    d.innerHTML = `<img src="${src}" alt="Dedication invitation page ${i + 1} of ${PAGES.length}" draggable="false">`;
-    book.appendChild(d); return d;
+    d.setAttribute('role', 'group'); d.setAttribute('aria-label', `Invitation page ${i + 1} of ${PAGES.length}`);
+    d.appendChild(clone(id)); book.appendChild(d); return d;
   });
 
   /* Size the booklet to the screen */
@@ -408,11 +489,11 @@ body{
 
   const q = new URLSearchParams({
     action: 'TEMPLATE',
-    text: 'Child Dedication of Kyle Quenzo',
+    text: 'Christening of Kyle Quenzo',
     dates: '20261214T153000/20261214T220000',
     ctz: 'Asia/Manila',
     location: 'San Juan de Sahagun Parish Church, Candon City, Ilocos Sur',
-    details: 'Child dedication of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur.'
+    details: 'Christening of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur.'
   });
   $('calLink').href = 'https://calendar.google.com/calendar/render?' + q.toString();
 })();

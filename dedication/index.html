@@ -29,6 +29,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../rsvp.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
@@ -51,6 +52,12 @@
         --panel: #fbfdff;
         --f-display: "Fredoka", "Varela Round", "Nunito", system-ui, sans-serif;
         --f-body: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+        --rf-ink: var(--slate);
+        --rf-soft: var(--slate-soft);
+        --rf-line: rgba(47, 74, 99, 0.22);
+        --rf-field: #fff;
+        --rf-gold: var(--gold-lo);
+        --rf-font: var(--f-body);
       }
       html,
       body {
@@ -877,7 +884,7 @@
           </div>
           <div>
             <dt>Reception</dt>
-            <dd>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</dd>
+            <dd>Ban-aw Sapphire Event Hall, Galimuyod, Ilocos Sur</dd>
           </div>
         </dl>
         <p class="outro">
@@ -931,7 +938,7 @@
           <div class="t">After<small>Reception</small></div>
           <div>
             <h3>Reception</h3>
-            <p>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</p>
+            <p>Ban-aw Sapphire Event Hall, Galimuyod, Ilocos Sur</p>
             <a
               class="link"
               target="_blank"
@@ -1417,11 +1424,16 @@
           location:
             "San Juan de Sahagun Parish Church, Candon City, Ilocos Sur",
           details:
-            "Christening of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur.",
+            "Christening of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Sapphire Event Hall, Galimuyod, Ilocos Sur.",
         });
         $("calLink").href =
           "https://calendar.google.com/calendar/render?" + q.toString();
       })();
     </script>
+    <script>
+      window.RSVP_EVENT = "christening";
+    </script>
+    <script src="../rsvp-config.js"></script>
+    <script src="../rsvp.js"></script>
   </body>
 </html>

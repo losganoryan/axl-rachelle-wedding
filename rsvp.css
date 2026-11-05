@@ -1,0 +1,39 @@
+/* RSVP form inside the Details sheet. Each page sets --rf-ink, --rf-soft, --rf-line, --rf-field, --rf-gold, --rf-font. */
+.rsvp-form{display:grid;gap:14px;margin:4px 0 16px}
+.rf-field{display:grid;gap:6px}
+.rf-field > span,.rf-choice legend{font:600 12px/1.3 var(--rf-font);letter-spacing:.04em;color:var(--rf-soft)}
+.rf-field input,.rf-field textarea{font:16px/1.4 var(--rf-font);color:var(--rf-ink);background:var(--rf-field);
+  border:1px solid var(--rf-line);border-radius:10px;padding:10px 12px;width:100%;box-sizing:border-box;min-height:44px}
+.rf-field textarea{resize:vertical}
+.rf-field input:focus-visible,.rf-field textarea:focus-visible,.rf-choice input:focus-visible + span{outline:2px solid var(--rf-gold);outline-offset:1px}
+.rf-field input[aria-invalid="true"]{border-color:#b3463a}
+.rf-choice{border:0;margin:0;padding:0;display:grid;gap:6px}
+.rf-choice .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rf-choice label{position:relative;display:block}
+.rf-choice input{position:absolute;opacity:0;inset:0;margin:0}
+.rf-choice span{display:flex;align-items:center;justify-content:center;min-height:44px;padding:8px 10px;text-align:center;
+  font:600 14px/1.25 var(--rf-font);color:var(--rf-ink);background:var(--rf-field);border:1px solid var(--rf-line);border-radius:10px;cursor:pointer}
+.rf-choice input:checked + span{background:var(--rf-ink);color:#fff;border-color:var(--rf-ink)}
+.rf-companions{display:grid;gap:10px;padding:12px;border-radius:12px;background:var(--rf-field);border:1px solid var(--rf-line)}
+.rf-step{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.rf-stepper{display:inline-flex;align-items:center;gap:6px}
+.rf-stepper button{width:40px;height:40px;border-radius:999px;border:1px solid var(--rf-line);background:#fff;color:var(--rf-ink);font:600 20px/1 var(--rf-font);cursor:pointer}
+.rf-stepper button:disabled{opacity:.35;cursor:default}
+.rf-stepper output{min-width:28px;text-align:center;font:700 18px/1 var(--rf-font);color:var(--rf-ink);font-variant-numeric:tabular-nums}
+.rf-names{display:grid;gap:8px}
+.rf-names input{font:15px/1.4 var(--rf-font);color:var(--rf-ink);background:#fff;border:1px solid var(--rf-line);border-radius:10px;padding:9px 12px;width:100%;box-sizing:border-box;min-height:42px}
+.rf-seats{margin:0;font:14px/1.4 var(--rf-font);color:var(--rf-soft)}
+.rf-seats b{color:var(--rf-ink);font-weight:700}
+.rf-submit{font:600 14px/1 var(--rf-font);letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--rf-ink);
+  border:1px solid var(--rf-ink);border-radius:999px;height:48px;padding:0 20px;cursor:pointer}
+.rf-submit:disabled{opacity:.6;cursor:default}
+.rf-submit:focus-visible{outline:2px solid var(--rf-gold);outline-offset:2px}
+.rf-status{margin:0;font:14px/1.45 var(--rf-font);color:var(--rf-soft);min-height:1.2em}
+.rf-status.ok{color:var(--rf-ink);font-weight:600}
+.rf-status.err{color:#b3463a}
+.rf-done{display:grid;gap:10px;padding:14px;border-radius:12px;background:var(--rf-field);border:1px solid var(--rf-line)}
+.rf-done p{margin:0;font:15px/1.45 var(--rf-font);color:var(--rf-ink)}
+.rf-done p b{font-weight:700}
+.rf-done button{justify-self:start;font:600 12px/1 var(--rf-font);letter-spacing:.06em;text-transform:uppercase;color:var(--rf-ink);
+  background:#fff;border:1px solid var(--rf-line);border-radius:999px;height:36px;padding:0 14px;cursor:pointer}
+.rf-or{margin:14px 0 2px;font:13px/1.4 var(--rf-font);color:var(--rf-soft)}

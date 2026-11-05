@@ -1,502 +1,1427 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Kyle Quenzo &middot; Christening</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2746%27 fill=%27%23d4b46a%27/%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27none%27 stroke=%27%23a8873f%27 stroke-width=%273%27/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap">
-<style>
-/* Layout: one screen. Sealed envelope on a soft sky → tap the seal → card rises out and becomes a page-turning booklet. */
-:root{
-  color-scheme: light;
-  --sky:#eef5fb;
-  --sky-deep:#d9e8f4;
-  --cloud:#ffffff;
-  --powder:#b7d3ea;
-  --powder-side:#a6c6e1;
-  --powder-flap:#c4dbee;
-  --slate:#2f4a63;
-  --slate-soft:#5f7a92;
-  --gold:#d4b46a;
-  --gold-hi:#f3e2b3;
-  --gold-lo:#a8873f;
-  --panel:#fbfdff;
-  --f-display:"Fredoka", "Varela Round", "Nunito", system-ui, sans-serif;
-  --f-body:"Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-}
-html,body{height:100%}
-body{
-  background-color:var(--sky);
-  background-image:radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(47,74,99,.10) 100%);
-  color:var(--slate);
-  font-family:var(--f-body);
-  overflow:hidden;
-  -webkit-tap-highlight-color:transparent;
-}
-.stage{
-  position:relative;height:100%;
-  padding-left:max(16px, env(safe-area-inset-left, 0px));
-  padding-right:max(16px, env(safe-area-inset-right, 0px));
-  padding-block:16px;
-  box-sizing:border-box;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,4vh,34px);
-}
-.texture{position:fixed;inset:0;pointer-events:none;opacity:.3;mix-blend-mode:multiply;background-size:220px 220px}
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <style>
+      :root {
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+    <title>Kyle Quenzo &middot; Christening</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2746%27 fill=%27%23d4b46a%27/%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2730%27 fill=%27none%27 stroke=%27%23a8873f%27 stroke-width=%273%27/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    />
+    <style>
+      /* Layout: one screen. Sealed envelope on a soft sky → tap the seal → card rises out and becomes a page-turning booklet. */
+      :root {
+        color-scheme: light;
+        --sky: #eef5fb;
+        --sky-deep: #d9e8f4;
+        --cloud: #ffffff;
+        --powder: #b7d3ea;
+        --powder-side: #a6c6e1;
+        --powder-flap: #c4dbee;
+        --slate: #2f4a63;
+        --slate-soft: #5f7a92;
+        --gold: #d4b46a;
+        --gold-hi: #f3e2b3;
+        --gold-lo: #a8873f;
+        --panel: #fbfdff;
+        --f-display: "Fredoka", "Varela Round", "Nunito", system-ui, sans-serif;
+        --f-body: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        background-color: var(--sky);
+        background-image: radial-gradient(
+          120% 90% at 50% 40%,
+          transparent 55%,
+          rgba(47, 74, 99, 0.1) 100%
+        );
+        color: var(--slate);
+        font-family: var(--f-body);
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .stage {
+        position: relative;
+        height: 100%;
+        padding-left: max(16px, env(safe-area-inset-left, 0px));
+        padding-right: max(16px, env(safe-area-inset-right, 0px));
+        padding-block: 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(18px, 4vh, 34px);
+      }
+      .texture {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.3;
+        mix-blend-mode: multiply;
+        background-size: 220px 220px;
+      }
 
-/* ---------- Sealed state ---------- */
-.heading{text-align:center;display:grid;gap:8px}
-.names{font-family:var(--f-display);font-weight:600;font-size:clamp(36px,9vw,54px);line-height:1;color:var(--slate);margin:0;letter-spacing:.01em;text-wrap:balance}
-.when{font-family:var(--f-body);font-size:15px;color:var(--slate-soft)}
+      /* ---------- Sealed state ---------- */
+      .heading {
+        text-align: center;
+        display: grid;
+        gap: 8px;
+      }
+      .names {
+        font-family: var(--f-display);
+        font-weight: 600;
+        font-size: clamp(36px, 9vw, 54px);
+        line-height: 1;
+        color: var(--slate);
+        margin: 0;
+        letter-spacing: 0.01em;
+        text-wrap: balance;
+      }
+      .when {
+        font-family: var(--f-body);
+        font-size: 15px;
+        color: var(--slate-soft);
+      }
 
-.env{
-  --ew:min(88vw, 460px, calc((100vh - 260px) * 1.43));
-  position:relative;width:var(--ew);aspect-ratio:10/7;cursor:pointer;
-  border:0;padding:0;background:none;
-}
-.env > *{position:absolute}
-.env-back{inset:0;border-radius:6px;background:linear-gradient(#8fb2d0,#9dbdd8);box-shadow:0 30px 50px -22px rgba(47,74,99,.5),0 6px 14px rgba(47,74,99,.16);z-index:1}
-.card{
-  z-index:3;left:27%;width:46%;top:3%;aspect-ratio:397/560;
-  background:#fff;border-radius:3px;overflow:hidden;
-  box-shadow:0 2px 6px rgba(47,74,99,.25);
-}
-.front{inset:0;z-index:4;border-radius:6px;overflow:hidden;
-  clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);
-  background:linear-gradient(170deg,#c0d9ec,var(--powder) 60%,#aacae3);
-}
-.front::before,.front::after{content:"";position:absolute;inset:0}
-.front::before{clip-path:polygon(0 0,50% 57%,0 100%);background:linear-gradient(100deg,var(--powder-side),#b3d0e7)}
-.front::after{clip-path:polygon(100% 0,50% 57%,100% 100%);background:linear-gradient(260deg,#a2c3de,#afcde6)}
-.flap{left:0;top:0;width:100%;height:60%;z-index:5;transform-origin:50% 0;transform:perspective(1000px) rotateX(0deg);transform-style:preserve-3d}
-.flap .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;clip-path:polygon(0 0,100% 0,50% 100%)}
-.flap .out{background:linear-gradient(180deg,#cfe2f1,var(--powder-flap) 55%,#b9d3ea);border-radius:6px 6px 0 0}
-.flap .in{transform:rotateX(180deg);background:
-  radial-gradient(circle at 25% 30%, rgba(212,180,106,.35) 0 1.6px, transparent 2.2px) 0 0/18px 18px,
-  radial-gradient(circle at 75% 80%, rgba(183,211,234,.5) 0 2px, transparent 2.6px) 0 0/18px 18px,
-  linear-gradient(#ffffff,#f1f7fc)}
-.seal{left:50%;top:60%;width:clamp(64px,19%,88px);aspect-ratio:1;transform:translate(-50%,-50%);z-index:6;pointer-events:none}
-.seal svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 3px 3px rgba(70,50,10,.3))}
-.seal .half-l{clip-path:inset(0 50% 0 0)}
-.seal .half-r{clip-path:inset(0 0 0 50%)}
-.env:focus-visible{outline:2px solid var(--gold-lo);outline-offset:8px;border-radius:8px}
-.hint{font-family:var(--f-body);font-style:italic;font-size:17px;color:var(--slate-soft);display:flex;align-items:center;gap:10px}
-.hint::before,.hint::after{content:"";width:28px;height:1px;background:var(--gold)}
-.pulse{animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.06)}}
+      .env {
+        --ew: min(88vw, 460px, calc((100vh - 260px) * 1.43));
+        position: relative;
+        width: var(--ew);
+        aspect-ratio: 10/7;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background: none;
+      }
+      .env > * {
+        position: absolute;
+      }
+      .env-back {
+        inset: 0;
+        border-radius: 6px;
+        background: linear-gradient(#8fb2d0, #9dbdd8);
+        box-shadow:
+          0 30px 50px -22px rgba(47, 74, 99, 0.5),
+          0 6px 14px rgba(47, 74, 99, 0.16);
+        z-index: 1;
+      }
+      .card {
+        z-index: 3;
+        left: 27%;
+        width: 46%;
+        top: 3%;
+        aspect-ratio: 397/560;
+        background: #fff;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(47, 74, 99, 0.25);
+      }
+      .front {
+        inset: 0;
+        z-index: 4;
+        border-radius: 6px;
+        overflow: hidden;
+        clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%);
+        background: linear-gradient(
+          170deg,
+          #c0d9ec,
+          var(--powder) 60%,
+          #aacae3
+        );
+      }
+      .front::before,
+      .front::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+      .front::before {
+        clip-path: polygon(0 0, 50% 57%, 0 100%);
+        background: linear-gradient(100deg, var(--powder-side), #b3d0e7);
+      }
+      .front::after {
+        clip-path: polygon(100% 0, 50% 57%, 100% 100%);
+        background: linear-gradient(260deg, #a2c3de, #afcde6);
+      }
+      .flap {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60%;
+        z-index: 5;
+        transform-origin: 50% 0;
+        transform: perspective(1000px) rotateX(0deg);
+        transform-style: preserve-3d;
+      }
+      .flap .face {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+      }
+      .flap .out {
+        background: linear-gradient(
+          180deg,
+          #cfe2f1,
+          var(--powder-flap) 55%,
+          #b9d3ea
+        );
+        border-radius: 6px 6px 0 0;
+      }
+      .flap .in {
+        transform: rotateX(180deg);
+        background:
+          radial-gradient(
+              circle at 25% 30%,
+              rgba(212, 180, 106, 0.35) 0 1.6px,
+              transparent 2.2px
+            )
+            0 0/18px 18px,
+          radial-gradient(
+              circle at 75% 80%,
+              rgba(183, 211, 234, 0.5) 0 2px,
+              transparent 2.6px
+            )
+            0 0/18px 18px,
+          linear-gradient(#ffffff, #f1f7fc);
+      }
+      .seal {
+        left: 50%;
+        top: 60%;
+        width: clamp(64px, 19%, 88px);
+        aspect-ratio: 1;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        pointer-events: none;
+      }
+      .seal svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 3px 3px rgba(70, 50, 10, 0.3));
+      }
+      .seal .half-l {
+        clip-path: inset(0 50% 0 0);
+      }
+      .seal .half-r {
+        clip-path: inset(0 0 0 50%);
+      }
+      .env:focus-visible {
+        outline: 2px solid var(--gold-lo);
+        outline-offset: 8px;
+        border-radius: 8px;
+      }
+      .hint {
+        font-family: var(--f-body);
+        font-style: italic;
+        font-size: 17px;
+        color: var(--slate-soft);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .hint::before,
+      .hint::after {
+        content: "";
+        width: 28px;
+        height: 1px;
+        background: var(--gold);
+      }
+      .pulse {
+        animation: pulse 2.4s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.06);
+        }
+      }
 
-/* ---------- Opened state ---------- */
-.reader{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
-  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:16px;box-sizing:border-box;visibility:hidden}
-.reader.on{visibility:visible}
-.book{position:relative;width:var(--bw,300px);height:var(--bh,423px);touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none}
-.page{position:absolute;inset:0;background:#fff;border-radius:4px;overflow:hidden;
-  box-shadow:0 24px 44px -20px rgba(47,74,99,.5),0 4px 10px rgba(47,74,99,.14);transform-origin:0 50%;backface-visibility:hidden}
+      /* ---------- Opened state ---------- */
+      .reader {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding-left: max(16px, env(safe-area-inset-left, 0px));
+        padding-right: max(16px, env(safe-area-inset-right, 0px));
+        padding-block: 16px;
+        box-sizing: border-box;
+        visibility: hidden;
+      }
+      .reader.on {
+        visibility: visible;
+      }
+      .book {
+        position: relative;
+        width: var(--bw, 300px);
+        height: var(--bh, 423px);
+        touch-action: pan-y pinch-zoom;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .page {
+        position: absolute;
+        inset: 0;
+        background: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow:
+          0 24px 44px -20px rgba(47, 74, 99, 0.5),
+          0 4px 10px rgba(47, 74, 99, 0.14);
+        transform-origin: 0 50%;
+        backface-visibility: hidden;
+      }
 
-/* ---------- The invitation pages (sized in container units so the same markup fits the envelope preview and the booklet) ---------- */
-.card,.page{container-type:inline-size}
-.pg{position:absolute;inset:0;overflow:hidden;color:var(--slate);text-align:center;
-  background:linear-gradient(180deg,#d8e9f6 0%,#eaf3fa 45%,#f8fbfe 100%)}
-.pg .sky{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.pg > *{position:relative}
-.pg p,.pg h2{margin:0}
-.pg img{pointer-events:none}
+      /* ---------- The invitation pages (sized in container units so the same markup fits the envelope preview and the booklet) ---------- */
+      .card,
+      .page {
+        container-type: inline-size;
+      }
+      .pg {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        color: var(--slate);
+        text-align: center;
+        background: linear-gradient(
+          180deg,
+          #d8e9f6 0%,
+          #eaf3fa 45%,
+          #f8fbfe 100%
+        );
+      }
+      .pg .sky {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .pg > * {
+        position: relative;
+      }
+      .pg p,
+      .pg h2 {
+        margin: 0;
+      }
+      .pg img {
+        pointer-events: none;
+      }
 
-.pg1{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:10cqw 8cqw 0;box-sizing:border-box}
-.pg1 .cross{width:13cqw;height:13cqw;margin-bottom:5cqw}
-.pg1 .photo{width:52cqw;height:52cqw;border-radius:50%;padding:2.2cqw;background:#fff;
-  box-shadow:0 0 0 3cqw rgba(183,211,234,.55),0 12cqw 14cqw -9cqw rgba(47,74,99,.4);position:relative}
-.pg1 .photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
-.pg1 .photo::after{content:"";position:absolute;inset:2.2cqw;border-radius:50%;box-shadow:inset 0 0 6cqw rgba(47,74,99,.18)}
-.pg1 .lead{margin-top:7cqw;font:italic 400 4.6cqw/1.3 var(--f-body);color:var(--slate-soft)}
-.pg1 .kid{font:600 13.5cqw/1 var(--f-display);letter-spacing:.005em;margin-top:1.5cqw;text-wrap:balance}
-.pg1 .date{margin-top:5cqw;font:600 4.2cqw/1.5 var(--f-body)}
-.pg1 .date small{display:block;font-weight:400;color:var(--slate-soft)}
+      .pg1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10cqw 8cqw 0;
+        box-sizing: border-box;
+      }
+      .pg1 .cross {
+        width: 13cqw;
+        height: 13cqw;
+        margin-bottom: 5cqw;
+      }
+      .pg1 .photo {
+        width: 52cqw;
+        height: 52cqw;
+        border-radius: 50%;
+        padding: 2.2cqw;
+        background: #fff;
+        box-shadow:
+          0 0 0 3cqw rgba(183, 211, 234, 0.55),
+          0 12cqw 14cqw -9cqw rgba(47, 74, 99, 0.4);
+        position: relative;
+      }
+      .pg1 .photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+      }
+      .pg1 .photo::after {
+        content: "";
+        position: absolute;
+        inset: 2.2cqw;
+        border-radius: 50%;
+        box-shadow: inset 0 0 6cqw rgba(47, 74, 99, 0.18);
+      }
+      .pg1 .lead {
+        margin-top: 7cqw;
+        font: italic 400 4.6cqw/1.3 var(--f-body);
+        color: var(--slate-soft);
+      }
+      .pg1 .kid {
+        font: 600 13.5cqw/1 var(--f-display);
+        letter-spacing: 0.005em;
+        margin-top: 1.5cqw;
+        text-wrap: balance;
+      }
+      .pg1 .date {
+        margin-top: 5cqw;
+        font: 600 4.2cqw/1.5 var(--f-body);
+      }
+      .pg1 .date small {
+        display: block;
+        font-weight: 400;
+        color: var(--slate-soft);
+      }
 
-.pg2{display:flex;flex-direction:column;justify-content:center;padding:8cqw 9cqw;box-sizing:border-box;gap:3.6cqw}
-.pg2 .msg{font:400 4.3cqw/1.5 var(--f-body);text-wrap:pretty}
-.pg2 .msg.first{font:500 5.4cqw/1.3 var(--f-display)}
-.pg2 .facts{margin:2cqw 0 0;padding:0;display:grid;gap:2.4cqw;text-align:left}
-.pg2 .facts div{display:grid;grid-template-columns:19cqw 1fr;gap:2.2cqw;align-items:baseline}
-.pg2 dt{font:500 4.2cqw/1.4 var(--f-display);color:var(--gold-lo)}
-.pg2 dd{margin:0;font:400 3.9cqw/1.45 var(--f-body)}
-.pg2 .outro{margin-top:1.2cqw;font:500 4.4cqw/1.4 var(--f-display);color:var(--slate-soft);text-wrap:balance}
-.pg2 .rule{width:22cqw;height:3cqw;margin:0 auto}
+      .pg2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8cqw 9cqw;
+        box-sizing: border-box;
+        gap: 3.6cqw;
+      }
+      .pg2 .msg {
+        font: 400 4.3cqw/1.5 var(--f-body);
+        text-wrap: pretty;
+      }
+      .pg2 .msg.first {
+        font: 500 5.4cqw/1.3 var(--f-display);
+      }
+      .pg2 .facts {
+        margin: 2cqw 0 0;
+        padding: 0;
+        display: grid;
+        gap: 2.4cqw;
+        text-align: left;
+      }
+      .pg2 .facts div {
+        display: grid;
+        grid-template-columns: 19cqw 1fr;
+        gap: 2.2cqw;
+        align-items: baseline;
+      }
+      .pg2 dt {
+        font: 500 4.2cqw/1.4 var(--f-display);
+        color: var(--gold-lo);
+      }
+      .pg2 dd {
+        margin: 0;
+        font: 400 3.9cqw/1.45 var(--f-body);
+      }
+      .pg2 .outro {
+        margin-top: 1.2cqw;
+        font: 500 4.4cqw/1.4 var(--f-display);
+        color: var(--slate-soft);
+        text-wrap: balance;
+      }
+      .pg2 .rule {
+        width: 22cqw;
+        height: 3cqw;
+        margin: 0 auto;
+      }
 
-.controls{display:flex;align-items:center;gap:10px;opacity:0}
-.btn{font:600 13px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);
-  background:var(--panel);border:1px solid rgba(47,74,99,.2);border-radius:999px;height:44px;min-width:44px;padding:0 16px;
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
-.btn:hover{border-color:var(--powder-side)}
-.btn:focus-visible{outline:2px solid var(--gold-lo);outline-offset:2px}
-.btn[disabled]{opacity:.35;cursor:default}
-.btn.icon{padding:0;width:44px}
-.btn svg{width:18px;height:18px}
-.count{font:600 13px/1 var(--f-body);letter-spacing:.08em;color:var(--slate-soft);min-width:54px;text-align:center;font-variant-numeric:tabular-nums}
-.music{position:fixed;z-index:20;top:calc(14px + env(safe-area-inset-top,0px));right:max(14px, calc(env(safe-area-inset-right,0px) + 8px));opacity:0;pointer-events:none;transition:opacity .6s}
-.music.show{opacity:1;pointer-events:auto}
-.music .bars{display:flex;gap:2px;align-items:flex-end;height:14px}
-.music .bars i{width:3px;background:var(--slate);border-radius:1px;height:4px;animation:eq 1s ease-in-out infinite}
-.music .bars i:nth-child(2){animation-delay:-.3s}.music .bars i:nth-child(3){animation-delay:-.6s}
-.music.muted .bars i{animation:none;height:3px;background:var(--slate-soft)}
-@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+      .controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+      }
+      .btn {
+        font: 600 13px/1 var(--f-body);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--slate);
+        background: var(--panel);
+        border: 1px solid rgba(47, 74, 99, 0.2);
+        border-radius: 999px;
+        height: 44px;
+        min-width: 44px;
+        padding: 0 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        border-color: var(--powder-side);
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--gold-lo);
+        outline-offset: 2px;
+      }
+      .btn[disabled] {
+        opacity: 0.35;
+        cursor: default;
+      }
+      .btn.icon {
+        padding: 0;
+        width: 44px;
+      }
+      .btn svg {
+        width: 18px;
+        height: 18px;
+      }
+      .count {
+        font: 600 13px/1 var(--f-body);
+        letter-spacing: 0.08em;
+        color: var(--slate-soft);
+        min-width: 54px;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+      }
+      .music {
+        position: fixed;
+        z-index: 20;
+        top: calc(14px + env(safe-area-inset-top, 0px));
+        right: max(14px, calc(env(safe-area-inset-right, 0px) + 8px));
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.6s;
+      }
+      .music.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .music .bars {
+        display: flex;
+        gap: 2px;
+        align-items: flex-end;
+        height: 14px;
+      }
+      .music .bars i {
+        width: 3px;
+        background: var(--slate);
+        border-radius: 1px;
+        height: 4px;
+        animation: eq 1s ease-in-out infinite;
+      }
+      .music .bars i:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .music .bars i:nth-child(3) {
+        animation-delay: -0.6s;
+      }
+      .music.muted .bars i {
+        animation: none;
+        height: 3px;
+        background: var(--slate-soft);
+      }
+      @keyframes eq {
+        0%,
+        100% {
+          height: 4px;
+        }
+        50% {
+          height: 14px;
+        }
+      }
 
-/* ---------- Details sheet ---------- */
-.scrim{position:fixed;inset:0;z-index:30;background:rgba(47,74,99,.35);opacity:0;transition:opacity .3s}
-.scrim.open{opacity:1}
-.sheet{position:fixed;z-index:31;left:0;right:0;bottom:0;margin:0 auto;max-width:520px;max-height:86%;overflow:auto;
-  background:var(--panel);border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(47,74,99,.25);
-  padding:10px max(20px, env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px, env(safe-area-inset-left,0px));
-  transform:translateY(105%);transition:transform .38s cubic-bezier(.2,.8,.2,1);box-sizing:border-box}
-.sheet.open{transform:none}
-.grab{width:40px;height:4px;border-radius:2px;background:var(--sky-deep);margin:4px auto 10px}
-.sheet h2{font:600 30px/1.1 var(--f-display);margin:4px 0 2px;color:var(--slate);text-align:center}
-.sheet .sub{font:15px var(--f-body);color:var(--slate-soft);text-align:center;margin:0 0 18px}
-.events{display:grid;gap:0;margin:0;padding:0;list-style:none}
-.ev{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--sky-deep)}
-.ev .t{font:600 15px/1.2 var(--f-body);color:var(--gold-lo);font-variant-numeric:tabular-nums;padding-top:2px}
-.ev .t small{display:block;font:12px/1.4 var(--f-body);color:var(--slate-soft)}
-.ev h3{margin:0;font:500 19px/1.2 var(--f-display);color:var(--slate)}
-.ev p{margin:3px 0 8px;font:14px/1.45 var(--f-body);color:var(--slate-soft);min-width:0}
-.link{font:600 12px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
-.rsvp{margin-top:6px;padding:16px;border-radius:12px;background:#e9f2fa}
-.rsvp h3{margin:0 0 2px;font:500 19px/1.2 var(--f-display)}
-.rsvp > p{margin:0 0 10px;font:14px/1.45 var(--f-body);color:var(--slate-soft)}
-.contact{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(47,74,99,.12)}
-.contact span{font:15px/1.3 var(--f-body);min-width:0}
-.contact b{font-weight:500;display:block;font-family:var(--f-display);font-size:18px}
-.contact .num{user-select:all;-webkit-user-select:all;font-variant-numeric:tabular-nums;letter-spacing:.04em}
-.copy{font:600 12px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--slate);background:var(--panel);border:1px solid rgba(47,74,99,.22);border-radius:999px;height:36px;padding:0 14px;cursor:pointer;flex:none}
-.cal{display:flex;justify-content:center;margin-top:18px}
-.close{position:absolute;top:10px;right:max(12px, env(safe-area-inset-right,0px))}
+      /* ---------- Details sheet ---------- */
+      .scrim {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        background: rgba(47, 74, 99, 0.35);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .scrim.open {
+        opacity: 1;
+      }
+      .sheet {
+        position: fixed;
+        z-index: 31;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        max-width: 520px;
+        max-height: 86%;
+        overflow: auto;
+        background: var(--panel);
+        border-radius: 18px 18px 0 0;
+        box-shadow: 0 -10px 40px rgba(47, 74, 99, 0.25);
+        padding: 10px max(20px, env(safe-area-inset-right, 0px))
+          calc(24px + env(safe-area-inset-bottom, 0px))
+          max(20px, env(safe-area-inset-left, 0px));
+        transform: translateY(105%);
+        transition: transform 0.38s cubic-bezier(0.2, 0.8, 0.2, 1);
+        box-sizing: border-box;
+      }
+      .sheet.open {
+        transform: none;
+      }
+      .grab {
+        width: 40px;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--sky-deep);
+        margin: 4px auto 10px;
+      }
+      .sheet h2 {
+        font: 600 30px/1.1 var(--f-display);
+        margin: 4px 0 2px;
+        color: var(--slate);
+        text-align: center;
+      }
+      .sheet .sub {
+        font: 15px var(--f-body);
+        color: var(--slate-soft);
+        text-align: center;
+        margin: 0 0 18px;
+      }
+      .events {
+        display: grid;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .ev {
+        display: grid;
+        grid-template-columns: 76px 1fr;
+        gap: 14px;
+        padding: 14px 0;
+        border-top: 1px solid var(--sky-deep);
+      }
+      .ev .t {
+        font: 600 15px/1.2 var(--f-body);
+        color: var(--gold-lo);
+        font-variant-numeric: tabular-nums;
+        padding-top: 2px;
+      }
+      .ev .t small {
+        display: block;
+        font: 12px/1.4 var(--f-body);
+        color: var(--slate-soft);
+      }
+      .ev h3 {
+        margin: 0;
+        font: 500 19px/1.2 var(--f-display);
+        color: var(--slate);
+      }
+      .ev p {
+        margin: 3px 0 8px;
+        font: 14px/1.45 var(--f-body);
+        color: var(--slate-soft);
+        min-width: 0;
+      }
+      .link {
+        font: 600 12px/1 var(--f-body);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--slate);
+        text-decoration: none;
+        border-bottom: 1px solid var(--gold);
+        padding-bottom: 2px;
+      }
+      .rsvp {
+        margin-top: 6px;
+        padding: 16px;
+        border-radius: 12px;
+        background: #e9f2fa;
+      }
+      .rsvp h3 {
+        margin: 0 0 2px;
+        font: 500 19px/1.2 var(--f-display);
+      }
+      .rsvp > p {
+        margin: 0 0 10px;
+        font: 14px/1.45 var(--f-body);
+        color: var(--slate-soft);
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 0;
+        border-top: 1px solid rgba(47, 74, 99, 0.12);
+      }
+      .contact span {
+        font: 15px/1.3 var(--f-body);
+        min-width: 0;
+      }
+      .contact b {
+        font-weight: 500;
+        display: block;
+        font-family: var(--f-display);
+        font-size: 18px;
+      }
+      .contact .num {
+        user-select: all;
+        -webkit-user-select: all;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.04em;
+      }
+      .copy {
+        font: 600 12px/1 var(--f-body);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--slate);
+        background: var(--panel);
+        border: 1px solid rgba(47, 74, 99, 0.22);
+        border-radius: 999px;
+        height: 36px;
+        padding: 0 14px;
+        cursor: pointer;
+        flex: none;
+      }
+      .cal {
+        display: flex;
+        justify-content: center;
+        margin-top: 18px;
+      }
+      .close {
+        position: absolute;
+        top: 10px;
+        right: max(12px, env(safe-area-inset-right, 0px));
+      }
 
-@media (prefers-reduced-motion: reduce){ .pulse,.music .bars i{animation:none} }
-</style>
-</head>
-<body>
+      @media (prefers-reduced-motion: reduce) {
+        .pulse,
+        .music .bars i {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="texture" id="texture"></div>
 
-<div class="texture" id="texture"></div>
+    <main class="stage" id="stage">
+      <header class="heading" id="heading">
+        <h1 class="names">Kyle Quenzo</h1>
+        <div class="when">A christening on Monday, December 14, 2026</div>
+      </header>
 
-<main class="stage" id="stage">
-  <header class="heading" id="heading">
-    <h1 class="names">Kyle Quenzo</h1>
-    <div class="when">A christening on Monday, December 14, 2026</div>
-  </header>
+      <button class="env" id="env" aria-label="Open the invitation">
+        <div class="env-back"></div>
+        <div class="card" id="card"></div>
+        <div class="front"></div>
+        <div class="flap" id="flap">
+          <div class="face out"></div>
+          <div class="face in"></div>
+        </div>
+        <div class="seal pulse" id="seal">
+          <svg class="half-l" viewBox="0 0 100 100" aria-hidden="true">
+            <use href="#sealArt" />
+          </svg>
+          <svg class="half-r" viewBox="0 0 100 100" aria-hidden="true">
+            <use href="#sealArt" />
+          </svg>
+        </div>
+      </button>
 
-  <button class="env" id="env" aria-label="Open the invitation">
-    <div class="env-back"></div>
-    <div class="card" id="card"></div>
-    <div class="front"></div>
-    <div class="flap" id="flap"><div class="face out"></div><div class="face in"></div></div>
-    <div class="seal pulse" id="seal">
-      <svg class="half-l" viewBox="0 0 100 100" aria-hidden="true"><use href="#sealArt"/></svg>
-      <svg class="half-r" viewBox="0 0 100 100" aria-hidden="true"><use href="#sealArt"/></svg>
-    </div>
-  </button>
+      <p class="hint" id="hint">Tap the seal to open</p>
 
-  <p class="hint" id="hint">Tap the seal to open</p>
+      <section class="reader" id="reader" aria-label="Invitation pages">
+        <div class="book" id="book" aria-live="polite"></div>
+        <nav class="controls" id="controls">
+          <button class="btn icon" id="prev" aria-label="Previous page">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M15 5l-7 7 7 7" />
+            </svg>
+          </button>
+          <span class="count" id="count">1 / 2</span>
+          <button class="btn icon" id="next" aria-label="Next page">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+          <button class="btn" id="detailsBtn">Details</button>
+        </nav>
+      </section>
+    </main>
 
-  <section class="reader" id="reader" aria-label="Invitation pages">
-    <div class="book" id="book" aria-live="polite"></div>
-    <nav class="controls" id="controls">
-      <button class="btn icon" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <span class="count" id="count">1 / 2</span>
-      <button class="btn icon" id="next" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
-      <button class="btn" id="detailsBtn">Details</button>
-    </nav>
-  </section>
-</main>
+    <!-- Page 1: the christening card -->
+    <template id="pg1">
+      <div class="pg pg1">
+        <svg
+          class="sky"
+          viewBox="0 0 397 560"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          <g filter="url(#soft)" fill="#fff">
+            <ellipse cx="60" cy="90" rx="110" ry="42" opacity=".85" />
+            <ellipse cx="350" cy="150" rx="120" ry="40" opacity=".8" />
+            <ellipse cx="30" cy="330" rx="95" ry="36" opacity=".7" />
+            <ellipse cx="380" cy="400" rx="105" ry="38" opacity=".75" />
+            <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95" />
+          </g>
+          <g fill="#d4b46a" opacity=".8">
+            <path
+              d="M62 190l2.4 6.6 6.6 2.4-6.6 2.4-2.4 6.6-2.4-6.6-6.6-2.4 6.6-2.4z"
+            />
+            <path d="M335 60l2 5.4 5.4 2-5.4 2-2 5.4-2-5.4-5.4-2 5.4-2z" />
+            <path
+              d="M330 300l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"
+            />
+            <path
+              d="M70 450l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"
+            />
+          </g>
+        </svg>
+        <svg class="cross" viewBox="0 0 60 60" aria-hidden="true">
+          <path
+            d="M30 6a6 6 0 0 1 6 6v8h8a6 6 0 0 1 0 12h-8v16a6 6 0 0 1-12 0V32h-8a6 6 0 0 1 0-12h8v-8a6 6 0 0 1 6-6z"
+            fill="url(#gcross)"
+          />
+        </svg>
+        <div class="photo">
+          <img
+            src="photo.jpg"
+            alt="Kyle Quenzo smiling in a white shirt and cream vest"
+            width="900"
+            height="900"
+          />
+        </div>
+        <p class="lead">The christening of</p>
+        <h2 class="kid">Kyle Quenzo</h2>
+        <p class="date">
+          Monday, December 14, 2026<small>3:30 in the afternoon</small>
+        </p>
+      </div>
+    </template>
 
-<!-- Page 1: the christening card -->
-<template id="pg1">
-  <div class="pg pg1">
-    <svg class="sky" viewBox="0 0 397 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <g filter="url(#soft)" fill="#fff">
-        <ellipse cx="60" cy="90" rx="110" ry="42" opacity=".85"/>
-        <ellipse cx="350" cy="150" rx="120" ry="40" opacity=".8"/>
-        <ellipse cx="30" cy="330" rx="95" ry="36" opacity=".7"/>
-        <ellipse cx="380" cy="400" rx="105" ry="38" opacity=".75"/>
-        <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95"/>
-      </g>
-      <g fill="#d4b46a" opacity=".8">
-        <path d="M62 190l2.4 6.6 6.6 2.4-6.6 2.4-2.4 6.6-2.4-6.6-6.6-2.4 6.6-2.4z"/>
-        <path d="M335 60l2 5.4 5.4 2-5.4 2-2 5.4-2-5.4-5.4-2 5.4-2z"/>
-        <path d="M330 300l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"/>
-        <path d="M70 450l1.6 4.4 4.4 1.6-4.4 1.6-1.6 4.4-1.6-4.4-4.4-1.6 4.4-1.6z"/>
-      </g>
+    <!-- Page 2: the family's message and the details -->
+    <template id="pg2">
+      <div class="pg pg2">
+        <svg
+          class="sky"
+          viewBox="0 0 397 560"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          <g filter="url(#soft)" fill="#fff">
+            <ellipse cx="40" cy="30" rx="120" ry="40" opacity=".8" />
+            <ellipse cx="370" cy="70" rx="110" ry="36" opacity=".7" />
+            <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95" />
+            <ellipse cx="20" cy="520" rx="110" ry="40" opacity=".7" />
+          </g>
+        </svg>
+        <p class="msg first">
+          Join us in celebrating a precious gift from above!
+        </p>
+        <p class="msg">
+          We joyfully present our child, Kyle Quenzo, to the Lord.
+        </p>
+        <p class="msg">
+          We cordially invite you to share in this special day of faith.
+        </p>
+        <svg class="rule" viewBox="0 0 88 12" aria-hidden="true">
+          <path
+            d="M2 6h30M56 6h30"
+            stroke="#d4b46a"
+            stroke-width="1.2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M44 1l1.6 3.4 3.4 1.6-3.4 1.6L44 11l-1.6-3.4L39 6l3.4-1.6z"
+            fill="#d4b46a"
+          />
+        </svg>
+        <dl class="facts">
+          <div>
+            <dt>When</dt>
+            <dd>Monday, December 14, 2026 at 3:30 PM</dd>
+          </div>
+          <div>
+            <dt>Where</dt>
+            <dd>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</dd>
+          </div>
+          <div>
+            <dt>Reception</dt>
+            <dd>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</dd>
+          </div>
+        </dl>
+        <p class="outro">
+          We look forward to celebrating this meaningful milestone with you!
+        </p>
+      </div>
+    </template>
+
+    <button class="btn icon music" id="music" aria-label="Pause music">
+      <span class="bars"><i></i><i></i><i></i></span>
+    </button>
+
+    <div class="scrim" id="scrim" hidden></div>
+    <section
+      class="sheet"
+      id="sheet"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="sheetTitle"
+      hidden
+    >
+      <div class="grab"></div>
+      <button class="btn icon close" id="closeSheet" aria-label="Close details">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        >
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+      <h2 id="sheetTitle">Kyle Quenzo</h2>
+      <p class="sub">Christening on Monday, December 14, 2026</p>
+      <ul class="events">
+        <li class="ev">
+          <div class="t">3:30 pm<small>Christening</small></div>
+          <div>
+            <h3>Christening of Kyle Quenzo</h3>
+            <p>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</p>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=San+Juan+de+Sahagun+Parish+Church+Candon+City+Ilocos+Sur"
+              >Open in Maps</a
+            >
+          </div>
+        </li>
+        <li class="ev">
+          <div class="t">After<small>Reception</small></div>
+          <div>
+            <h3>Reception</h3>
+            <p>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</p>
+            <a
+              class="link"
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/place/Sapphire+Business+Center+and+Main+Office/@17.183698,120.4616823,1132m/data=!3m2!1e3!4b1!4m6!3m5!1s0x338e19c76d4a9fa3:0x145c7a8bc892873e!8m2!3d17.1836929!4d120.4665532!16s%2Fg%2F11fylt3p_z?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D"
+              >Open in Maps</a
+            >
+          </div>
+        </li>
+      </ul>
+      <div class="rsvp">
+        <h3>Kindly RSVP by 15 November 2026</h3>
+        <p>Please let us know if you can join us.</p>
+        <div class="contact">
+          <span><b>Axl</b><span class="num">0994 142 1722</span></span
+          ><button class="copy" data-num="09941421722">Copy</button>
+        </div>
+        <div class="contact">
+          <span><b>Rachelle</b><span class="num">0994 142 1720</span></span
+          ><button class="copy" data-num="09941421720">Copy</button>
+        </div>
+      </div>
+      <div class="cal">
+        <a class="link" target="_blank" rel="noopener" id="calLink" href="#"
+          >Add to Google Calendar</a
+        >
+      </div>
+    </section>
+
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <filter id="soft" x="-30%" y="-60%" width="160%" height="220%">
+          <feGaussianBlur stdDeviation="14" />
+        </filter>
+        <linearGradient id="gcross" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f3e2b3" />
+          <stop offset=".5" stop-color="#d4b46a" />
+          <stop offset="1" stop-color="#a8873f" />
+        </linearGradient>
+        <radialGradient id="g1" cx="38%" cy="32%" r="75%">
+          <stop offset="0" stop-color="#f6e4b0" />
+          <stop offset=".45" stop-color="#d4ae62" />
+          <stop offset="1" stop-color="#8d6a2c" />
+        </radialGradient>
+        <radialGradient id="g2" cx="60%" cy="65%" r="70%">
+          <stop offset="0" stop-color="#c79a4c" />
+          <stop offset="1" stop-color="#e9cf8b" />
+        </radialGradient>
+        <g id="sealArt">
+          <path id="sealEdge" fill="url(#g1)" d="" />
+          <circle cx="50" cy="50" r="33" fill="url(#g2)" />
+          <circle
+            cx="50"
+            cy="50"
+            r="30"
+            fill="none"
+            stroke="#9c7632"
+            stroke-width="1"
+            stroke-dasharray="1.2 2.4"
+          />
+          <text
+            x="50"
+            y="59"
+            text-anchor="middle"
+            font-family="Fredoka, Nunito, sans-serif"
+            font-weight="600"
+            font-size="25"
+            fill="#7a5a22"
+            stroke="#f3dea5"
+            stroke-width=".4"
+          >
+            KQ
+          </text>
+        </g>
+      </defs>
     </svg>
-    <svg class="cross" viewBox="0 0 60 60" aria-hidden="true">
-      <path d="M30 6a6 6 0 0 1 6 6v8h8a6 6 0 0 1 0 12h-8v16a6 6 0 0 1-12 0V32h-8a6 6 0 0 1 0-12h8v-8a6 6 0 0 1 6-6z" fill="url(#gcross)"/>
-    </svg>
-    <div class="photo"><img src="photo.jpg" alt="Kyle Quenzo smiling in a white shirt and cream vest" width="900" height="900"></div>
-    <p class="lead">The christening of</p>
-    <h2 class="kid">Kyle Quenzo</h2>
-    <p class="date">Monday, December 14, 2026<small>3:30 in the afternoon</small></p>
-  </div>
-</template>
 
-<!-- Page 2: the family's message and the details -->
-<template id="pg2">
-  <div class="pg pg2">
-    <svg class="sky" viewBox="0 0 397 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <g filter="url(#soft)" fill="#fff">
-        <ellipse cx="40" cy="30" rx="120" ry="40" opacity=".8"/>
-        <ellipse cx="370" cy="70" rx="110" ry="36" opacity=".7"/>
-        <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95"/>
-        <ellipse cx="20" cy="520" rx="110" ry="40" opacity=".7"/>
-      </g>
-    </svg>
-    <p class="msg first">Join us in celebrating a precious gift from above!</p>
-    <p class="msg">We joyfully present our child, Kyle Quenzo, to the Lord.</p>
-    <p class="msg">We cordially invite you to share in this special day of faith.</p>
-    <svg class="rule" viewBox="0 0 88 12" aria-hidden="true"><path d="M2 6h30M56 6h30" stroke="#d4b46a" stroke-width="1.2" stroke-linecap="round"/><path d="M44 1l1.6 3.4 3.4 1.6-3.4 1.6L44 11l-1.6-3.4L39 6l3.4-1.6z" fill="#d4b46a"/></svg>
-    <dl class="facts">
-      <div><dt>When</dt><dd>Monday, December 14, 2026 at 3:30 PM</dd></div>
-      <div><dt>Where</dt><dd>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</dd></div>
-      <div><dt>Reception</dt><dd>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</dd></div>
-    </dl>
-    <p class="outro">We look forward to celebrating this meaningful milestone with you!</p>
-  </div>
-</template>
+    <script>
+      (() => {
+        /* Pages in reading order, each a <template>. The first one is the card that slides out of the envelope. */
+        const PAGES = ["pg1", "pg2"];
+        const RATIO = 560 / 397;
+        const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const $ = (id) => document.getElementById(id);
+        const stage = $("stage"),
+          env = $("env"),
+          card = $("card"),
+          flap = $("flap"),
+          seal = $("seal");
+        const heading = $("heading"),
+          hint = $("hint"),
+          reader = $("reader"),
+          book = $("book");
+        const controls = $("controls"),
+          count = $("count"),
+          prevB = $("prev"),
+          nextB = $("next");
+        const musicB = $("music");
 
-<button class="btn icon music" id="music" aria-label="Pause music"><span class="bars"><i></i><i></i><i></i></span></button>
+        /* Paper grain */
+        try {
+          const c = document.createElement("canvas");
+          c.width = c.height = 220;
+          const x = c.getContext("2d"),
+            d = x.createImageData(220, 220);
+          for (let i = 0; i < d.data.length; i += 4) {
+            const v = 200 + Math.random() * 55;
+            d.data[i] = v;
+            d.data[i + 1] = v - 4;
+            d.data[i + 2] = v - 8;
+            d.data[i + 3] = 26;
+          }
+          x.putImageData(d, 0, 0);
+          $("texture").style.backgroundImage = `url(${c.toDataURL()})`;
+        } catch (e) {}
 
-<div class="scrim" id="scrim" hidden></div>
-<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
-  <div class="grab"></div>
-  <button class="btn icon close" id="closeSheet" aria-label="Close details"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-  <h2 id="sheetTitle">Kyle Quenzo</h2>
-  <p class="sub">Christening on Monday, December 14, 2026</p>
-  <ul class="events">
-    <li class="ev">
-      <div class="t">3:30 pm<small>Christening</small></div>
-      <div><h3>Christening of Kyle Quenzo</h3>
-        <p>San Juan de Sahagun Parish Church, Candon City, Ilocos Sur</p>
-        <a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=San+Juan+de+Sahagun+Parish+Church+Candon+City+Ilocos+Sur">Open in Maps</a></div>
-    </li>
-    <li class="ev">
-      <div class="t">After<small>Reception</small></div>
-      <div><h3>Reception</h3>
-        <p>Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur</p>
-        <a class="link" target="_blank" rel="noopener" href="https://www.google.com/maps/place/Sapphire+Business+Center+and+Main+Office/@17.183698,120.4616823,1132m/data=!3m2!1e3!4b1!4m6!3m5!1s0x338e19c76d4a9fa3:0x145c7a8bc892873e!8m2!3d17.1836929!4d120.4665532!16s%2Fg%2F11fylt3p_z?entry=ttu&g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D">Open in Maps</a></div>
-    </li>
-  </ul>
-  <div class="rsvp">
-    <h3>Kindly RSVP by 15 November 2026</h3>
-    <p>Please let us know if you can join us.</p>
-    <div class="contact"><span><b>Ajae</b><span class="num">0994 142 1722</span></span><button class="copy" data-num="09941421722">Copy</button></div>
-    <div class="contact"><span><b>Rachelle</b><span class="num">0994 142 1720</span></span><button class="copy" data-num="09941421720">Copy</button></div>
-  </div>
-  <div class="cal"><a class="link" target="_blank" rel="noopener" id="calLink" href="#">Add to Google Calendar</a></div>
-</section>
+        /* Wax seal edge: an irregular, slightly wavy circle */
+        (() => {
+          let p = "";
+          for (let i = 0; i <= 120; i++) {
+            const a = (i / 120) * Math.PI * 2;
+            const r =
+              46 +
+              Math.sin(a * 9) * 1.6 +
+              Math.sin(a * 23 + 1) * 0.8 +
+              Math.cos(a * 5) * 1.1;
+            p +=
+              (i ? "L" : "M") +
+              (50 + r * Math.cos(a)).toFixed(2) +
+              " " +
+              (50 + r * Math.sin(a)).toFixed(2);
+          }
+          $("sealEdge").setAttribute("d", p + "Z");
+        })();
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <filter id="soft" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="14"/></filter>
-    <linearGradient id="gcross" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3e2b3"/><stop offset=".5" stop-color="#d4b46a"/><stop offset="1" stop-color="#a8873f"/></linearGradient>
-    <radialGradient id="g1" cx="38%" cy="32%" r="75%">
-      <stop offset="0" stop-color="#f6e4b0"/><stop offset=".45" stop-color="#d4ae62"/><stop offset="1" stop-color="#8d6a2c"/>
-    </radialGradient>
-    <radialGradient id="g2" cx="60%" cy="65%" r="70%">
-      <stop offset="0" stop-color="#c79a4c"/><stop offset="1" stop-color="#e9cf8b"/>
-    </radialGradient>
-    <g id="sealArt">
-      <path id="sealEdge" fill="url(#g1)" d=""/>
-      <circle cx="50" cy="50" r="33" fill="url(#g2)"/>
-      <circle cx="50" cy="50" r="30" fill="none" stroke="#9c7632" stroke-width="1" stroke-dasharray="1.2 2.4"/>
-      <text x="50" y="59" text-anchor="middle" font-family="Fredoka, Nunito, sans-serif" font-weight="600" font-size="25" fill="#7a5a22" stroke="#f3dea5" stroke-width=".4">KQ</text>
-    </g>
-  </defs>
-</svg>
+        /* Build pages: the envelope preview gets a copy of page 1, the booklet gets every page */
+        const clone = (id) => $(id).content.cloneNode(true);
+        card.appendChild(clone(PAGES[0]));
+        const pages = PAGES.map((id, i) => {
+          const d = document.createElement("div");
+          d.className = "page";
+          d.hidden = i !== 0;
+          d.setAttribute("role", "group");
+          d.setAttribute(
+            "aria-label",
+            `Invitation page ${i + 1} of ${PAGES.length}`,
+          );
+          d.appendChild(clone(id));
+          book.appendChild(d);
+          return d;
+        });
 
-<script>
-(() => {
-  /* Pages in reading order, each a <template>. The first one is the card that slides out of the envelope. */
-  const PAGES = ['pg1', 'pg2'];
-  const RATIO = 560 / 397;
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const $ = id => document.getElementById(id);
-  const stage = $('stage'), env = $('env'), card = $('card'), flap = $('flap'), seal = $('seal');
-  const heading = $('heading'), hint = $('hint'), reader = $('reader'), book = $('book');
-  const controls = $('controls'), count = $('count'), prevB = $('prev'), nextB = $('next');
-  const musicB = $('music');
+        /* Size the booklet to the screen */
+        function size() {
+          const W = stage.clientWidth - 32,
+            H = stage.clientHeight - 32 - 44 - 14;
+          let bw = Math.min(W, H / RATIO, 600);
+          bw = Math.max(bw, 160);
+          book.style.setProperty("--bw", bw + "px");
+          book.style.setProperty("--bh", bw * RATIO + "px");
+        }
+        size();
+        addEventListener("resize", size);
 
-  /* Paper grain */
-  try {
-    const c = document.createElement('canvas'); c.width = c.height = 220;
-    const x = c.getContext('2d'), d = x.createImageData(220, 220);
-    for (let i = 0; i < d.data.length; i += 4) { const v = 200 + Math.random() * 55; d.data[i] = v; d.data[i+1] = v - 4; d.data[i+2] = v - 8; d.data[i+3] = 26; }
-    x.putImageData(d, 0, 0); $('texture').style.backgroundImage = `url(${c.toDataURL()})`;
-  } catch (e) {}
+        /* Music */
+        const audio = new Audio("music.mp3");
+        audio.loop = true;
+        audio.preload = "auto";
+        audio.volume = 0;
+        let wantMusic = true;
+        function fadeTo(v, ms) {
+          const from = audio.volume,
+            t0 = performance.now();
+          const step = (t) => {
+            const k = Math.min(1, (t - t0) / ms);
+            try {
+              audio.volume = from + (v - from) * k;
+            } catch (e) {}
+            if (k < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+        function setMusicUI() {
+          musicB.classList.toggle("muted", !wantMusic);
+          musicB.setAttribute(
+            "aria-label",
+            wantMusic ? "Pause music" : "Play music",
+          );
+        }
+        musicB.addEventListener("click", () => {
+          wantMusic = !wantMusic;
+          setMusicUI();
+          if (wantMusic) {
+            audio.play().catch(() => {});
+            fadeTo(0.8, 600);
+          } else {
+            audio.pause();
+          }
+        });
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) audio.pause();
+          else if (wantMusic && opened) audio.play().catch(() => {});
+        });
 
-  /* Wax seal edge: an irregular, slightly wavy circle */
-  (() => {
-    let p = '';
-    for (let i = 0; i <= 120; i++) {
-      const a = i / 120 * Math.PI * 2;
-      const r = 46 + Math.sin(a * 9) * 1.6 + Math.sin(a * 23 + 1) * .8 + Math.cos(a * 5) * 1.1;
-      p += (i ? 'L' : 'M') + (50 + r * Math.cos(a)).toFixed(2) + ' ' + (50 + r * Math.sin(a)).toFixed(2);
-    }
-    $('sealEdge').setAttribute('d', p + 'Z');
-  })();
+        /* Opening sequence */
+        let opened = false,
+          idx = 0,
+          busy = false;
+        const ease = "cubic-bezier(.45,.05,.2,1)";
+        const A = (el, kf, o) =>
+          el.animate(kf, Object.assign({ fill: "forwards", easing: ease }, o))
+            .finished;
+        const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  /* Build pages: the envelope preview gets a copy of page 1, the booklet gets every page */
-  const clone = id => $(id).content.cloneNode(true);
-  card.appendChild(clone(PAGES[0]));
-  const pages = PAGES.map((id, i) => {
-    const d = document.createElement('div'); d.className = 'page'; d.hidden = i !== 0;
-    d.setAttribute('role', 'group'); d.setAttribute('aria-label', `Invitation page ${i + 1} of ${PAGES.length}`);
-    d.appendChild(clone(id)); book.appendChild(d); return d;
-  });
+        async function open() {
+          if (opened) return;
+          opened = true;
+          env.disabled = true;
+          audio
+            .play()
+            .then(() => fadeTo(0.8, 2500))
+            .catch(() => {});
+          musicB.classList.add("show");
+          setMusicUI();
+          seal.classList.remove("pulse");
+          const k = reduce ? 0.25 : 1;
+          hint.animate([{ opacity: 1 }, { opacity: 0 }], {
+            duration: 300,
+            fill: "forwards",
+          });
+          heading.animate(
+            [{ opacity: 1 }, { opacity: 0, transform: "translateY(-16px)" }],
+            { duration: 700 * k, fill: "forwards", easing: ease },
+          );
 
-  /* Size the booklet to the screen */
-  function size() {
-    const W = stage.clientWidth - 32, H = stage.clientHeight - 32 - 44 - 14;
-    let bw = Math.min(W, H / RATIO, 600); bw = Math.max(bw, 160);
-    book.style.setProperty('--bw', bw + 'px'); book.style.setProperty('--bh', bw * RATIO + 'px');
-  }
-  size(); addEventListener('resize', size);
+          const [sl, sr] = seal.querySelectorAll("svg");
+          seal.animate(
+            [
+              { transform: "translate(-50%,-50%) scale(1)" },
+              { transform: "translate(-50%,-50%) scale(.94)" },
+              { transform: "translate(-50%,-50%) scale(1)" },
+            ],
+            { duration: 260 * k },
+          );
+          await wait(200 * k);
+          await Promise.all([
+            A(
+              sl,
+              [
+                { transform: "none", opacity: 1 },
+                {
+                  transform: "translate(-22px,18px) rotate(-24deg)",
+                  opacity: 0,
+                },
+              ],
+              { duration: 700 * k },
+            ),
+            A(
+              sr,
+              [
+                { transform: "none", opacity: 1 },
+                { transform: "translate(22px,18px) rotate(24deg)", opacity: 0 },
+              ],
+              { duration: 700 * k },
+            ),
+          ]);
 
-  /* Music */
-  const audio = new Audio('music.mp3'); audio.loop = true; audio.preload = 'auto'; audio.volume = 0;
-  let wantMusic = true;
-  function fadeTo(v, ms) {
-    const from = audio.volume, t0 = performance.now();
-    const step = t => { const k = Math.min(1, (t - t0) / ms); try { audio.volume = from + (v - from) * k; } catch (e) {} if (k < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
-  }
-  function setMusicUI() { musicB.classList.toggle('muted', !wantMusic); musicB.setAttribute('aria-label', wantMusic ? 'Pause music' : 'Play music'); }
-  musicB.addEventListener('click', () => {
-    wantMusic = !wantMusic; setMusicUI();
-    if (wantMusic) { audio.play().catch(() => {}); fadeTo(.8, 600); } else { audio.pause(); }
-  });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) audio.pause(); else if (wantMusic && opened) audio.play().catch(() => {}); });
+          setTimeout(() => {
+            flap.style.zIndex = 2;
+          }, 470 * k);
+          await A(
+            flap,
+            [
+              { transform: "perspective(1000px) rotateX(0deg)" },
+              { transform: "perspective(1000px) rotateX(180deg)" },
+            ],
+            { duration: 950 * k },
+          );
 
-  /* Opening sequence */
-  let opened = false, idx = 0, busy = false;
-  const ease = 'cubic-bezier(.45,.05,.2,1)';
-  const A = (el, kf, o) => el.animate(kf, Object.assign({fill: 'forwards', easing: ease}, o)).finished;
-  const wait = ms => new Promise(r => setTimeout(r, ms));
+          await A(
+            card,
+            [{ transform: "translateY(0)" }, { transform: "translateY(-64%)" }],
+            { duration: 1000 * k, easing: "cubic-bezier(.3,.6,.25,1)" },
+          );
+          await wait(250 * k);
 
-  async function open() {
-    if (opened) return; opened = true; env.disabled = true;
-    audio.play().then(() => fadeTo(.8, 2500)).catch(() => {});
-    musicB.classList.add('show'); setMusicUI();
-    seal.classList.remove('pulse');
-    const k = reduce ? .25 : 1;
-    hint.animate([{opacity: 1}, {opacity: 0}], {duration: 300, fill: 'forwards'});
-    heading.animate([{opacity: 1}, {opacity: 0, transform: 'translateY(-16px)'}], {duration: 700 * k, fill: 'forwards', easing: ease});
+          /* Card becomes the first page of the booklet */
+          const from = card.getBoundingClientRect();
+          reader.classList.add("on");
+          const to = book.getBoundingClientRect();
+          card.style.visibility = "hidden";
+          const s = from.width / to.width;
+          book.style.transformOrigin = "0 0";
+          env.animate(
+            [
+              { transform: "none", opacity: 1 },
+              { transform: "translateY(55vh) rotate(4deg)", opacity: 0 },
+            ],
+            {
+              duration: 1100 * k,
+              easing: "cubic-bezier(.5,0,.75,0)",
+              fill: "forwards",
+            },
+          );
+          await A(
+            book,
+            [
+              {
+                transform: `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${s})`,
+              },
+              { transform: "none" },
+            ],
+            {
+              duration: 1200 * k,
+              easing: "cubic-bezier(.6,0,.2,1)",
+              fill: "none",
+            },
+          );
+          env.hidden = true;
+          heading.hidden = true;
+          hint.hidden = true;
+          A(
+            controls,
+            [
+              { opacity: 0, transform: "translateY(8px)" },
+              { opacity: 1, transform: "none" },
+            ],
+            { duration: 500 },
+          );
+          update();
+        }
+        env.addEventListener("click", open);
 
-    const [sl, sr] = seal.querySelectorAll('svg');
-    seal.animate([{transform: 'translate(-50%,-50%) scale(1)'}, {transform: 'translate(-50%,-50%) scale(.94)'}, {transform: 'translate(-50%,-50%) scale(1)'}], {duration: 260 * k});
-    await wait(200 * k);
-    await Promise.all([
-      A(sl, [{transform: 'none', opacity: 1}, {transform: 'translate(-22px,18px) rotate(-24deg)', opacity: 0}], {duration: 700 * k}),
-      A(sr, [{transform: 'none', opacity: 1}, {transform: 'translate(22px,18px) rotate(24deg)', opacity: 0}], {duration: 700 * k}),
-    ]);
+        /* Page turning */
+        function update() {
+          count.textContent = `${idx + 1} / ${PAGES.length}`;
+          prevB.disabled = idx === 0;
+          nextB.disabled = idx === PAGES.length - 1;
+        }
+        async function go(n) {
+          if (busy || n === idx || n < 0 || n >= PAGES.length) return;
+          busy = true;
+          const cur = pages[idx],
+            nxt = pages[n],
+            fwd = n > idx;
+          nxt.hidden = false;
+          const P = "perspective(1800px) ";
+          if (reduce) {
+            nxt.style.zIndex = 2;
+            cur.style.zIndex = 1;
+            await A(nxt, [{ opacity: 0 }, { opacity: 1 }], {
+              duration: 220,
+              fill: "none",
+            });
+          } else if (fwd) {
+            cur.style.zIndex = 2;
+            nxt.style.zIndex = 1;
+            await A(
+              cur,
+              [
+                { transform: P + "rotateY(0)", opacity: 1, offset: 0 },
+                { opacity: 1, offset: 0.6 },
+                { transform: P + "rotateY(-110deg)", opacity: 0 },
+              ],
+              { duration: 750, fill: "none" },
+            );
+          } else {
+            cur.style.zIndex = 1;
+            nxt.style.zIndex = 2;
+            await A(
+              nxt,
+              [
+                { transform: P + "rotateY(-110deg)", opacity: 0, offset: 0 },
+                { opacity: 1, offset: 0.4 },
+                { transform: P + "rotateY(0)", opacity: 1 },
+              ],
+              { duration: 750, fill: "none" },
+            );
+          }
+          cur.hidden = true;
+          cur.style.zIndex = "";
+          nxt.style.zIndex = "";
+          idx = n;
+          update();
+          busy = false;
+        }
+        prevB.addEventListener("click", () => go(idx - 1));
+        nextB.addEventListener("click", () => go(idx + 1));
 
-    setTimeout(() => { flap.style.zIndex = 2; }, 470 * k);
-    await A(flap, [{transform: 'perspective(1000px) rotateX(0deg)'}, {transform: 'perspective(1000px) rotateX(180deg)'}], {duration: 950 * k});
+        /* Swipe and tap on the booklet */
+        let sx = null,
+          sy = 0,
+          st = 0;
+        book.addEventListener("pointerdown", (e) => {
+          sx = e.clientX;
+          sy = e.clientY;
+          st = Date.now();
+        });
+        book.addEventListener("pointerup", (e) => {
+          if (sx === null) return;
+          const dx = e.clientX - sx,
+            dy = e.clientY - sy;
+          sx = null;
+          if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+            go(idx + (dx < 0 ? 1 : -1));
+            return;
+          }
+          if (Math.abs(dx) < 8 && Math.abs(dy) < 8 && Date.now() - st < 400) {
+            const r = book.getBoundingClientRect();
+            go(idx + (e.clientX - r.left < r.width * 0.35 ? -1 : 1));
+          }
+        });
+        book.addEventListener("pointercancel", () => {
+          sx = null;
+        });
+        addEventListener("keydown", (e) => {
+          if (sheet.classList.contains("open")) {
+            if (e.key === "Escape") closeSheet();
+            return;
+          }
+          if (!opened) return;
+          if (e.key === "ArrowRight" || e.key === "PageDown") go(idx + 1);
+          if (e.key === "ArrowLeft" || e.key === "PageUp") go(idx - 1);
+        });
 
-    await A(card, [{transform: 'translateY(0)'}, {transform: 'translateY(-64%)'}], {duration: 1000 * k, easing: 'cubic-bezier(.3,.6,.25,1)'});
-    await wait(250 * k);
+        /* Details sheet */
+        const sheet = $("sheet"),
+          scrim = $("scrim");
+        function openSheet() {
+          sheet.hidden = false;
+          scrim.hidden = false;
+          requestAnimationFrame(() =>
+            requestAnimationFrame(() => {
+              sheet.classList.add("open");
+              scrim.classList.add("open");
+            }),
+          );
+          setTimeout(() => $("closeSheet").focus(), 50);
+        }
+        function closeSheet() {
+          sheet.classList.remove("open");
+          scrim.classList.remove("open");
+          setTimeout(() => {
+            sheet.hidden = true;
+            scrim.hidden = true;
+            $("detailsBtn").focus();
+          }, 380);
+        }
+        $("detailsBtn").addEventListener("click", openSheet);
+        $("closeSheet").addEventListener("click", closeSheet);
+        scrim.addEventListener("click", closeSheet);
 
-    /* Card becomes the first page of the booklet */
-    const from = card.getBoundingClientRect();
-    reader.classList.add('on');
-    const to = book.getBoundingClientRect();
-    card.style.visibility = 'hidden';
-    const s = from.width / to.width;
-    book.style.transformOrigin = '0 0';
-    env.animate([{transform: 'none', opacity: 1}, {transform: 'translateY(55vh) rotate(4deg)', opacity: 0}], {duration: 1100 * k, easing: 'cubic-bezier(.5,0,.75,0)', fill: 'forwards'});
-    await A(book, [{transform: `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${s})`}, {transform: 'none'}], {duration: 1200 * k, easing: 'cubic-bezier(.6,0,.2,1)', fill: 'none'});
-    env.hidden = true; heading.hidden = true; hint.hidden = true;
-    A(controls, [{opacity: 0, transform: 'translateY(8px)'}, {opacity: 1, transform: 'none'}], {duration: 500});
-    update();
-  }
-  env.addEventListener('click', open);
+        document.querySelectorAll(".copy").forEach((b) =>
+          b.addEventListener("click", () => {
+            const done = () => {
+              b.textContent = "Copied";
+              setTimeout(() => (b.textContent = "Copy"), 1600);
+            };
+            const pick = () => {
+              const s = getSelection(),
+                r = document.createRange();
+              r.selectNodeContents(
+                b.previousElementSibling.querySelector(".num"),
+              );
+              s.removeAllRanges();
+              s.addRange(r);
+              b.textContent = "Selected";
+              setTimeout(() => (b.textContent = "Copy"), 1600);
+            };
+            try {
+              navigator.clipboard.writeText(b.dataset.num).then(done, pick);
+            } catch (e) {
+              pick();
+            }
+          }),
+        );
 
-  /* Page turning */
-  function update() {
-    count.textContent = `${idx + 1} / ${PAGES.length}`;
-    prevB.disabled = idx === 0; nextB.disabled = idx === PAGES.length - 1;
-  }
-  async function go(n) {
-    if (busy || n === idx || n < 0 || n >= PAGES.length) return;
-    busy = true;
-    const cur = pages[idx], nxt = pages[n], fwd = n > idx;
-    nxt.hidden = false;
-    const P = 'perspective(1800px) ';
-    if (reduce) {
-      nxt.style.zIndex = 2; cur.style.zIndex = 1;
-      await A(nxt, [{opacity: 0}, {opacity: 1}], {duration: 220, fill: 'none'});
-    } else if (fwd) {
-      cur.style.zIndex = 2; nxt.style.zIndex = 1;
-      await A(cur, [{transform: P + 'rotateY(0)', opacity: 1, offset: 0}, {opacity: 1, offset: .6}, {transform: P + 'rotateY(-110deg)', opacity: 0}], {duration: 750, fill: 'none'});
-    } else {
-      cur.style.zIndex = 1; nxt.style.zIndex = 2;
-      await A(nxt, [{transform: P + 'rotateY(-110deg)', opacity: 0, offset: 0}, {opacity: 1, offset: .4}, {transform: P + 'rotateY(0)', opacity: 1}], {duration: 750, fill: 'none'});
-    }
-    cur.hidden = true; cur.style.zIndex = ''; nxt.style.zIndex = '';
-    idx = n; update(); busy = false;
-  }
-  prevB.addEventListener('click', () => go(idx - 1));
-  nextB.addEventListener('click', () => go(idx + 1));
-
-  /* Swipe and tap on the booklet */
-  let sx = null, sy = 0, st = 0;
-  book.addEventListener('pointerdown', e => { sx = e.clientX; sy = e.clientY; st = Date.now(); });
-  book.addEventListener('pointerup', e => {
-    if (sx === null) return;
-    const dx = e.clientX - sx, dy = e.clientY - sy; sx = null;
-    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { go(idx + (dx < 0 ? 1 : -1)); return; }
-    if (Math.abs(dx) < 8 && Math.abs(dy) < 8 && Date.now() - st < 400) {
-      const r = book.getBoundingClientRect();
-      go(idx + (e.clientX - r.left < r.width * .35 ? -1 : 1));
-    }
-  });
-  book.addEventListener('pointercancel', () => { sx = null; });
-  addEventListener('keydown', e => {
-    if (sheet.classList.contains('open')) { if (e.key === 'Escape') closeSheet(); return; }
-    if (!opened) return;
-    if (e.key === 'ArrowRight' || e.key === 'PageDown') go(idx + 1);
-    if (e.key === 'ArrowLeft' || e.key === 'PageUp') go(idx - 1);
-  });
-
-  /* Details sheet */
-  const sheet = $('sheet'), scrim = $('scrim');
-  function openSheet() {
-    sheet.hidden = false; scrim.hidden = false;
-    requestAnimationFrame(() => requestAnimationFrame(() => { sheet.classList.add('open'); scrim.classList.add('open'); }));
-    setTimeout(() => $('closeSheet').focus(), 50);
-  }
-  function closeSheet() {
-    sheet.classList.remove('open'); scrim.classList.remove('open');
-    setTimeout(() => { sheet.hidden = true; scrim.hidden = true; $('detailsBtn').focus(); }, 380);
-  }
-  $('detailsBtn').addEventListener('click', openSheet);
-  $('closeSheet').addEventListener('click', closeSheet);
-  scrim.addEventListener('click', closeSheet);
-
-  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
-    const done = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1600); };
-    const pick = () => { const s = getSelection(), r = document.createRange(); r.selectNodeContents(b.previousElementSibling.querySelector('.num')); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected'; setTimeout(() => b.textContent = 'Copy', 1600); };
-    try { navigator.clipboard.writeText(b.dataset.num).then(done, pick); } catch (e) { pick(); }
-  }));
-
-  const q = new URLSearchParams({
-    action: 'TEMPLATE',
-    text: 'Christening of Kyle Quenzo',
-    dates: '20261214T153000/20261214T220000',
-    ctz: 'Asia/Manila',
-    location: 'San Juan de Sahagun Parish Church, Candon City, Ilocos Sur',
-    details: 'Christening of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur.'
-  });
-  $('calLink').href = 'https://calendar.google.com/calendar/render?' + q.toString();
-})();
-</script>
-</body>
+        const q = new URLSearchParams({
+          action: "TEMPLATE",
+          text: "Christening of Kyle Quenzo",
+          dates: "20261214T153000/20261214T220000",
+          ctz: "Asia/Manila",
+          location:
+            "San Juan de Sahagun Parish Church, Candon City, Ilocos Sur",
+          details:
+            "Christening of Kyle Quenzo 3:30 PM at San Juan de Sahagun Parish Church, Candon City.\nReception at Ban-aw Saphire Event Hall, Galimuyod, Ilocos Sur.",
+        });
+        $("calLink").href =
+          "https://calendar.google.com/calendar/render?" + q.toString();
+      })();
+    </script>
+  </body>
 </html>

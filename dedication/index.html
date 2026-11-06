@@ -460,6 +460,54 @@
         margin: 0 auto;
       }
 
+      .pg3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7cqw 6cqw;
+        box-sizing: border-box;
+        gap: 2.4cqw;
+      }
+      .pg3 .title {
+        font: 500 6.4cqw/1.2 var(--f-display);
+      }
+      .pg3 .sub {
+        font: italic 400 3.8cqw/1.3 var(--f-body);
+        color: var(--slate-soft);
+      }
+      .pg3 .rule {
+        width: 22cqw;
+        height: 3cqw;
+        margin: 0 auto;
+      }
+      .pg3 .gp {
+        list-style: none;
+        margin: 1cqw 0 0;
+        padding: 0;
+        columns: 2;
+        column-gap: 3cqw;
+        text-align: left;
+        font: 400 2.95cqw/1.45 var(--f-body);
+      }
+      .pg3 .gp li {
+        break-inside: avoid;
+        padding-left: 2.2cqw;
+        position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .pg3 .gp li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.62em;
+        width: 1.1cqw;
+        height: 1.1cqw;
+        border-radius: 50%;
+        background: var(--gold);
+      }
+
       .controls {
         display: flex;
         align-items: center;
@@ -769,7 +817,7 @@
               <path d="M15 5l-7 7 7 7" />
             </svg>
           </button>
-          <span class="count" id="count">1 / 2</span>
+          <span class="count" id="count">1 / 3</span>
           <button class="btn icon" id="next" aria-label="Next page">
             <svg
               viewBox="0 0 24 24"
@@ -890,6 +938,87 @@
         <p class="outro">
           We look forward to celebrating this meaningful milestone with you!
         </p>
+      </div>
+    </template>
+
+    <!-- Page 3: the godparents -->
+    <template id="pg3">
+      <div class="pg pg3">
+        <svg
+          class="sky"
+          viewBox="0 0 397 560"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          <g filter="url(#soft)" fill="#fff">
+            <ellipse cx="40" cy="30" rx="120" ry="40" opacity=".8" />
+            <ellipse cx="370" cy="70" rx="110" ry="36" opacity=".7" />
+            <ellipse cx="200" cy="585" rx="260" ry="70" opacity=".95" />
+            <ellipse cx="20" cy="520" rx="110" ry="40" opacity=".7" />
+          </g>
+        </svg>
+        <h2 class="title">Godparents</h2>
+        <p class="sub">Ninang &amp; Ninong</p>
+        <svg class="rule" viewBox="0 0 88 12" aria-hidden="true">
+          <path
+            d="M2 6h30M56 6h30"
+            stroke="#d4b46a"
+            stroke-width="1.2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M44 1l1.6 3.4 3.4 1.6-3.4 1.6L44 11l-1.6-3.4L39 6l3.4-1.6z"
+            fill="#d4b46a"
+          />
+        </svg>
+        <ul class="gp">
+          <li>Anna Emily Haggot</li>
+          <li>Angelita Angala</li>
+          <li>Cherry Joven</li>
+          <li>Clarine Mallillin</li>
+          <li>Ruben Habon</li>
+          <li>John Lorenze Peralta</li>
+          <li>Abrian Mafalla</li>
+          <li>Lorelie Joy Losgano</li>
+          <li>Jonel Altura</li>
+          <li>Rolando Yague</li>
+          <li>Samson Vilog</li>
+          <li>Daryl Jorda</li>
+          <li>Zendrick Hermosura</li>
+          <li>Miguel Tapales</li>
+          <li>Christian Alvarado</li>
+          <li>Gracia Gacusana</li>
+          <li>Diana Luz Bitao</li>
+          <li>Jannine Gander</li>
+          <li>Robeli Villanueva</li>
+          <li>Louella Navarro</li>
+          <li>Danica Soria</li>
+          <li>Estephanie Ann Raquepo</li>
+          <li>Beverly Joyce Gambeda</li>
+          <li>Robie Ibao</li>
+          <li>Marjorie Heraña</li>
+          <li>Pamela Joyce Manzano</li>
+          <li>Eryll Mae Toquero</li>
+          <li>Daphne Baltero</li>
+          <li>Kathleen Cabreros</li>
+          <li>Sonia Panganiban</li>
+          <li>Andrea Cañales</li>
+          <li>Sheimberly Jimeno</li>
+          <li>Jessa Naungayan</li>
+          <li>B-Jay Rabe</li>
+          <li>Christian Claus Tolentino</li>
+          <li>Melford John Pascua</li>
+          <li>Jimcarl Ramos</li>
+          <li>Jonathan Manansala</li>
+          <li>Ailon Belen</li>
+          <li>Junel Calibuso</li>
+          <li>Jeffrey Gacula</li>
+          <li>Aljan Fariñas</li>
+          <li>Joanne Barnachea</li>
+          <li>Angelito Jimenez</li>
+          <li>Joshua Ugalde</li>
+          <li>Aira Gapate</li>
+        </ul>
       </div>
     </template>
 
@@ -1019,7 +1148,7 @@
     <script>
       (() => {
         /* Pages in reading order, each a <template>. The first one is the card that slides out of the envelope. */
-        const PAGES = ["pg1", "pg2"];
+        const PAGES = ["pg1", "pg2", "pg3"];
         const RATIO = 560 / 397;
         const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
         const $ = (id) => document.getElementById(id);
